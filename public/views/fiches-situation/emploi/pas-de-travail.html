@@ -1,0 +1,80 @@
+	<div class="row">
+		  <div class="col-sm-12 titre">  Docteur, cela devient grave, je n’arrive pas à trouver un emploi</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">IL N’A PLUS OU PRESQUE PAS DE RESSOURCES </h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse" >
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Il est urgent de le diriger vers une AS pour obtenir des aides</li> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Lui conseiller de voir le <b>PÔLE EMPLOI</b> et d’étudier des formules de stages ou de requalification rémunérés.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<p>L’orienter vers les activités centrées sur l’économie sociale et solidaire. Les ACI, Ateliers et Chantiers d’Insertion, par exemple, proposant des contrats de travail en CUI-CAE pour les personnes rencontrant des difficultés sociales et professionnelles particulières.</p>
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>On peut aussi lui conseiller de s’engager dans des activités</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1" >
+					<ul > 
+						<li>associations de quartier,</li>
+						<li>regroupement communautaire de voisinage, </li>
+						<li>réseaux d’échanges de savoir, car le chômage entraîne l’exclusion sociale.</li>
+					</ul>
+					<p>Cela peut l’aider à conserver ses liens sociaux et à accéder à un emploi par le biais des contacts avec les membres de ces réseaux.</p>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">LES RESSOURCES </h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse" >
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’il ne touche rien du chômage et qu’il a plus de 25 ans, il peut toujours demander le RSA<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('RSA');">Voir RSA</button>. Ne pas perdre de vue que le RSA est aussi un tremplin vers la reprise d’emploi et qu’il permet de cumuler une allocation de base, le RSA socle, et un supplément de revenus dans la limite d’un certain plafond de ressources.</li> 
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>Il peut obtenir </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2" >
+					<ul> 
+						<li>diverses aides sociales par les fonds sociaux,</li>
+						<li>des allocations (logement, familiales avec la CAF),</li>
+						<li>des aides financières facultati ves: colis alimentaires, règlement des factures EDF/GDF, aides financières directes, etc.</li>
+					</ul>
+					<ul class="liste-reponse">
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Pour appuyer cette démarche, diriger le patient vers une AS du CCAS ou du Conseil général accompagné d’une lettre type <button ui-sref="104" class="btn btn-default btn-LT">Lettre type</button></li> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’il est surendetté,<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('surendettement');">Voir surendettement et faillites familiales</button> </li> 
+					</ul>
+					<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+					<p> pour bénéficier du Fonds de solidarité à l’énergie (factures EDF): envoyer le patient chez l’AS du CCAS, du Conseil général ou d’EDF avec sa facture et un justificatif de revenus pour constituer un dossier.</p>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

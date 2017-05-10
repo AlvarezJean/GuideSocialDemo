@@ -1,0 +1,97 @@
+
+		<div class="row">
+		  <div class="col-sm-12 titre"> Docteur, on veut m’expulser de mon appartement<i class="zmdi zmdi-compass icon-savoir" data-toggle="modal" style="margin-left: 35%;" data-target=".savoir-modal-lg2"  style="color: white;cursor: pointer;"></i></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 citation">
+			  	<p><em><blockquote>"Votre patient est dans une situation critique. Mais vous devez vérifier que toutes les solutions de recours ont été envisagées."</blockquote></em>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">DE QUOI S’AGIT-IL?</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Rupture de couple?</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Lui conseiller de voir une AS. Votre patient peut éventuellement bénéficier d’un soutien spécifique: aide juridictionnelle, hébergement en foyer, etc
+						</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’il s’agit de violences conjugales, contacter SOS Femmes battues <a href="tel:01-40-33-80-60">01 40 33 80 60</a>  (l’écoutant peut rappeler le patient) qui orientera votre patiente, voir également avec une AS pour une fiche d’orientation SIAO en vue d’un hébergement.</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’agit-il des suites d’un accident du travail? <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('assurance-invalidite');">Voir Assurance invalidité</button> et <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('accident-travail');">Voir Accident de travail</button></li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> Parfois la rupture de couple peut avoir des conséquences graves. Il est nécessaire de diriger votre patient vers une médiation familiale. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('mediation-familiale');">Voir Médiation familiale</button></li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>Problème de voisinage / litige avec le propriétaire?</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p>Pour connaître les démarches à suivre:<br> Conseiller au patient de se renseigner auprès de l’ADIL. Adresses sur <a  target="_blank" href="http://www.anil.org">www.anil.org </a> </p>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Ou d’une Maison de la justice et du droit.<br> Adresses sur <a target="_blank" href="http://www.justice.gouv.fr">www.justice.gouv.fr</a>
+						</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Voir également avec les associations de prévention des expulsions (ex: Fondation Abbé Pierre).</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse3=true"><em>Retard du paiement du loyer</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<p>Tout dépend si une procédure est engagée.</p>
+					<p><b>Retard du loyer</b></p>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Contacter une AS du Conseil général, du CCAS ou encore de la CAF pour étudier d’éventuelles aides au maintien dans le logement.
+						</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Il faut tenter de résoudre le problème à l’amiable avec le propriétaire et négocier, si possible, un échéancier permettant d’apurer la dette.</li>
+					</ul>
+					<p><b>Si la procédure est engagée</b></p>
+					<p>Contacter une AS du Conseil général, du CCAS (mairie) ou encore de la CAF qui pourra étudier les possibilités d’aide au maintien dans le logement.<br>A chacune de ces étapes, le patient doit faire appel à un travailleur social susceptible de l’aider. </p>
+					<ul>
+						<li><b>Il a reçu un commandement de payer.</b> Il a deux mois pour tenter de régler le problème. Possibilité de faire une demande de FSL.</li>
+						<li><b>Il a reçu une assignation à comparaître.</b> Il a deux mois de délai mais il doit se présenter au tribunal (ou se faire représenter par un avocat). La procédure est déjà bien engagée mais il est encore temps de faire preuve de bonne foi et de négocier des délais de paiement.</li>
+						<li><b>Il a reçu commandement de libérer les locaux.</b> Cela signifie que le juge a prononcé l’expulsion. Votre patient a 2 mois à compter de la réception du commandement pour réagir. Si le juge n’a pas accordé de délai, ou si les délais sont trop courts, votre patient doit saisir le juge de l’exécution. Il doit aussi se faire aider par les services sociaux. </li>
+					</ul>
+					<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+					<p> le patient peut faire appel du jugement et l’appel peut être suspensif (le jugement initial le précise).</p>
+					<p class="attention"><i style="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span> Une fois la procédure lancée, la CAF suspend les allocations logement qui ne pourront être débloquées qu’une fois la reprise du paiement des loyers courants engagée après accord de la CDAPL (commission départementale des aides publiques au logement).</p>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+
+
+<div class="modal  fade savoir-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg2" role="document">
+	    <div class="modal-content wrapper-fiche ">
+		    <div class="modal-body">
+				<h3 class="titre-conduite" ><span style="color: orangered;font-size: 30px;" class="glyphicon glyphicon-triangle-right"></span>Conduite à tenir</h3>
+				<p> Faites remarquer à votre patient que l’acceptation d’une pension d’invalidité n’empêche pas de rechercher un emploi même s’il bénéficie d’une IIème catégorie. Lors de l’envoi des questionnaires trimestriels de ressources par la caisse d’invalidité, la reprise d’un emploi est listée parmi les réponses possibles. Les salaires versés au titre de cette reprise d’activité, doivent simplement être mentionnés, justificatifs à l’appui. La pension est alors recalculée et éventuellement suspendue pendant le temps de cette activité.<br> Sachez en outre, qu’en tant que médecin traitant, vous pouvez appuyer sa démarche en vue de demander une experti se médicale dans le cas de contestation d’une décision médicale prise par sa caisse.</p>
+			</div>	
+	    <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	    </div>
+	    </div>
+	</div>
+</div>
+	
+<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

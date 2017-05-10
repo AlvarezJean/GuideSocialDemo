@@ -1,0 +1,80 @@
+		<div class="row">
+		  <div class="col-sm-12 titre">Docteur, je suis étudiant, c’est la galère!</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 citation">
+		  	<p><em><blockquote>"Une partie des étudiants est de plus en plus dans une situation de précarité. Éloignés du domicile parental, ces étudiants sont livrés à eux-mêmes et doivent faire face seuls aux problèmes du quotidien au risque, parfois, d’hypothéquer leurs chances de réussite." </blockquote></em>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">DE QUOI S’AGIT-IL?</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Un problème de couverture sociale</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p>Les coûts d’inscription, alliés à ceux de la SS (213 € en 2014-2015) et de la mutuelle, représentent d’importants budgets pour un étudiant. De plus en plus, ils décident de se passer de mutuelle étudiante et vont de moins en moins se faire soigner. Sachez que l’affiliation à la SS étudiante est obligatoire entre 20 ans et 28 ans: <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('etudiants-ft');">Voir Etudiants</button></p>
+					<p><b><em>Cependant:</em></b></p>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’il a un contrat de travail d’au moins 60 heures par mois pour l’année scolaire en cours (1er octobre au 30 Septembre):<br>
+						İl est affilié au régime général de SS. Il n’a pas à payer la SS étudiante. Il doit se présenter, le jour de son inscription, avec son contrat de travail.
+						</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’il perd son emploi au cours de l’année universitaire, l’étudiant doit expliquer sa nouvelle situation auprès de sa caisse de SS (CPAM) et s’assurer qu’il est bien couvert jusqu’à la fin de l’année universitaire (demander une attestation actualisée). Sinon, il doit s’acquitter de la SS étudiante.
+						</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> Si le patient reprend des études et qu’il a travaillé suffisamment pour ouvrir des droits, il doit demander à sa caisse de SS si ses droits au régime général couvrent la totalité de l’année universitaire (demander une attestation actualisée). Sinon, il doit s’acquitter de la SS étudiante.
+						</li> 
+					</ul>
+					<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+					<p>Parfois, les assurances ou mutuelles versent des prestations supplémentaires pour payer les gardes d’enfants ou aides ménagères en cas de maladie. Vérifier le contrat d’assurance.</p>
+					<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+					<p>Tous les étudiants qui ne sont plus déclarés sur la fiche d’imposition de leurs parents peuvent bénéficier de la CMUC ou de l’aide à la mutuelle de la CPAM si les conditions de ressources sont respectées. S’ils avaient pris une mutuelle étudiante, ils peuvent se faire rembourser en apportant le justificatif d’attribution.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CMU');">Voir CMU</button></p>
+					<p>Conseiller toujours de prendre une mutuelle. Prix minimum: 10 €/mois. </p>
+					
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>Graves problèmes financiers</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p>L’université attribue des bourses sous certaines conditions (notamment les revenus des parents).</p>
+					<div class="row">
+						<div class="col-sm-12 ">
+						  	<p class="attention"><i style="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span>Les demandes sont à faire entre le 15 janvier et le 30 avril précédant l’année universitaire pour laquelle l’étudiant postule à une bourse. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('etudiants-ft');">Voir Etudiants</button>
+						  	</p>
+						</div>
+					</div>
+					<p>Néanmoins, si ces conditions ne sont pas remplies, d’autres possibilités de financement sont possibles. Dans tous les cas, lui conseiller de s’adresser à l’AS du CROUS.</p>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse3=true"><em>Surmenage et malnutrition</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<p>L’activité professionnelle et universitaire incessante met les étudiants dans des situations de malnutrition et de surmenage. </p>
+					<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+					<p>L’AS du CROUS peut faire des demandes d’aide alimentaire sous forme de tickets restaurant universitaire. L’AS du CCAS, si l’étudiant est salarié peut également faire ce type de demande.</p>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+	
+
+	<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

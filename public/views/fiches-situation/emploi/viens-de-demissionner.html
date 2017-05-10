@@ -1,0 +1,67 @@
+	<div class="row">
+		  <div class="col-sm-12 titre"> Docteur, je viens de démissionner</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 citation">
+		  	<p><em><blockquote>"Il paraît soulagé, a bien mesuré toutes les conséquences de son geste et semble avoir un projet professionnel." </blockquote></em>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">ASSUREZ-VOUS NÉANMOINS:</h3>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<ul class="liste-reponse"> 
+				<li><span  class="glyphicon glyphicon-triangle-right "></span>Qu’il s’est inscrit au PÔLE EMPLOI, démarche incontournable pour bénéficier de droits (indemnisation, accompagnement, etc.)<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('assurance-chomage');">Voir Assurance chômage</button>
+				</li>
+				<li><p class="attention"><i style="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span> Informer votre patient sur le dispositif dit de «rupture conventionnelle» permettant à un salarié de rompre son contrat de travail en accord avec l’employeur. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('demissions-legitimes');">Voir Cas de démissions légitimes</button><br>Ce dispositif peut permettre de trouver une solution de type consensuelle à défaut d’être la plus satisfaisante. Elle permet de sauvegarder l’essentiel des droits notamment le droit à une indemnisation chômage.</p>
+				</li>
+				<li><span  class="glyphicon glyphicon-triangle-right "></span>Qu’il puisse vivre son quotidien pendant les 4 mois durant lesquels il ne serait pas indemnisé.
+				</li>
+				<li><span  class="glyphicon glyphicon-triangle-right "></span>Qu’il envisage, le cas échéant, de prendre contact avec une AS pour évaluer tous les problèmes et possibilités liés à sa nouvelle situation.
+				</li>
+				<li>Le montant de ses ressources chutant de manière spectaculaire, et celui de ses charges ne variant pas, il doit adapter son quotidien en fonction des éléments nouveaux qui découlent de cette situation: réduction du train de vie, nouvelles règles de dépenses.</li>
+			</ul>
+		  </div>
+		</div>
+			<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">SI VOUS JUGEZ QUE L’ÉTAT DE VOTRE PATIENT NECESSITE UN ARRÊT DE TRAVAIL APRÈS SON INSCRIPTION AU CHÔMAGE, SACHEZ QUE</h3>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<ul class="liste-reponse"> 
+				<li><span  class="glyphicon glyphicon-triangle-right "></span>Si l’arrêt de maladie dure moins de 21 jours consécutifs, il n’y aura aucune incidence sur le délai de 121 jours qu’exige l’indemnisation
+				</li>
+				<li><span  class="glyphicon glyphicon-triangle-right "></span>Si l’arrêt est supérieur à 21 jours, le délai de 121 jours sera allongé proportionnellement au nombre de jours de maladie indemnisés par la SS.</p>
+				</li>
+			</ul>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 wrapper-savoir">
+				<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+				<p>il est important de rappeler que pendant les périodes de chômage ou de perception du RSA, votre patient a droit à des IJ de maladie et maternité sous condition d’avoir ouvert des droits. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('arret-maladie');">Voir Arrêt de maladie</button></p>
+			</div>
+			<div class="col-sm-12 wrapper-savoir">
+				<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+				<p> le versement d’IJ suspend le versement de l’allocation chômage et en reporte d’autant la durée. </p>
+			</div>
+		</div>
+		
+<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

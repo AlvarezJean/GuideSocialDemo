@@ -1,0 +1,158 @@
+		<div class="row">
+		  <div class="col-sm-12 titre">Docteur, je n’ai plus mes allocations <i class="zmdi zmdi-compass icon-savoir" data-toggle="modal" style="margin-left: 35%;" data-target=".savoir-modal-lg7"  style="color: white;cursor: pointer;"></i></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 citation">
+			  	<p><em><blockquote>"Il faut commencer par une sorte d’inventaire pour savoir de quelles allocations il bénéficie et connaître les raisons de cette suspension." </blockquote></em>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">S’IL NE TOUCHE PLUS: </h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Le RSA , Revenu de Solidarité Active</em></h6>
+					<div class="wrapper-reponse" ng-show="reponse1" >
+						<ul>
+							<li>Il n’a pas envoyé sa déclaration  de ressources trimestrielle.</li>
+							<li>Suspicion de vie commune avec une personne percevant un salaire, un RSA ou des allocations.</li>
+							<li>Il n’a pas respecté les obligations liées au contrat d’insertion </li>
+							<li>Il a travaillé à temps partiel et a dépassé le nombre d’heures de travail cumulables avec le RSA Se renseigner auprès de la CAF</li>
+						</ul>
+						<p>Conseiller à votre patient de se renseigner auprès des caisses de retraite ou de mutuelle s’il peut avoir une aide en attendant.</p>
+						<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>L’ASS allocation spécifiques de solidarité </em></h6>
+					<div class="wrapper-reponse" ng-show="reponse2" >
+						<ul>
+							<li>Il a dépassé la durée maximale pour toucher cette allocation</li>
+							<li>Il n’a pas recherché activement du travail ou n’est plus inscrit à Pôle emploi.</li>
+							<li>Il a travaillé à temps part el et a dépassé le nombre d’heures de travail cumulables avec l’ASS.</li>
+							<li>Conseiller de contacter le PÔLE EMPLOI.</li>
+						</ul>
+						<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse3=true"><em>L’AER allocation équivalent retraite</em></h6>
+					<div class="wrapper-reponse" ng-show="reponse3" >
+						<ul>
+							<li>Il a passé l’age de la retraite.</li>
+							<li>Il a augmenté ses ressources.</li>
+						</ul>
+						<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse4=true"><em>L’ATS allocation transitoire de solidarité</em></h6>
+					<div class="wrapper-reponse" ng-show="reponse4" >
+						<ul>
+							<li>Il a dépassé l’âge de la retraite.</li>
+							<li>Il n’a pas recherché activement du travail ou n’est plus inscrit à Pôle emploi. Conseiller de contacter Le PÔLE EMPLOI.</li>
+						</ul>
+						<button  class="btn btn-default" ng-click="reponse4=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse5=true"><em>L’ATA allocation d’attente temporaire</em></h6>
+					<div class="wrapper-reponse" ng-show="reponse5" >
+						<ul>
+							<li>Il est en fin de droits.</li>
+							<li>Il n’a pas recherché activement du travail et n’est plus inscrit au PÔLE EMPLOI.</li>
+						</ul>
+						<p>Conseiller de prendre rendez-vous au PÔLE EMPLOI pour le calcul des droits à l’ASS, l’ATA ou l’AER.
+						Le RSA au titre de l’ex API, (ancienne allocation de parent isolé confondue dans le dispositif RSA en juin 2009). </p>
+						<ul>
+							<li>Il vit en concubinage.</li>
+							<li>Son enfant dépasse 3 ans.</li>
+							<li>Ses ressources ont augmenté.</li>
+							<li>Il a oublié d’envoyer sa déclaration annuelle de ressources. Contacter la CAF.</li>
+						</ul>
+						<button  class="btn btn-default" ng-click="reponse5=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse6=true"><em>Les Allocations logement</em></h6>
+					<div class="wrapper-reponse" ng-show="reponse6" >
+						<ul>
+							<li>Il n’a pas payé son loyer.</li>
+							<li>Ses ressources ont augmenté.</li>
+							<li>Il a oublié d’envoyer sa déclaration annuelle de ressources. Contacter la CAF.</li>
+						</ul>
+						<button  class="btn btn-default" ng-click="reponse6=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse7=true"><em>L’AAH allocation adulte handicapé </em></h6>
+					<div class="wrapper-reponse" ng-show="reponse7" >
+						<ul>
+							<li>Il n’a pas renouvelé sa demande à l’échéance de ses droits.</li>
+							<li>Il n’a pas répondu au courrier ou à l’appel au rendez-vous.</li>
+							<li>Il a dépassé l’âge de la retraite (faire une demande de retraite au titre de l’inaptitude), d’APA.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('apa');">Voir Apa</button></li>
+							<li>Ses ressources ont augmenté.</li>
+							<li>il n’a pas renvoyé la déclaration de ressources trimestrielle qui lui est régulièrement adressée en cas de cumul d’allocation avec un emploi. Contacter la MDPH ou la CAF.</li>
+						</ul>
+						<button  class="btn btn-default" ng-click="reponse7=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse8=true"><em>La pension d’invalidité </em></h6>
+					<div class="wrapper-reponse" ng-show="reponse8" >
+						<ul>
+							<li>Il a changé de catégorie.</li>
+							<li>Il a repris le travail.</li>
+							<li>Il a passé l’age de la retraite. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('assurance-invalidite');">Voir Assurance invalidité</button> Contacter la caisse de SS.</li>
+						</ul>
+						<p>Les Allocations familiales accordées en fonction du nombre d’enfants à charge, de leur âge pour certaines allocations, il y a obligation de scolarité (certificat de scolarité). Contacter la CAF.</p>
+						<button  class="btn btn-default" ng-click="reponse8=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		
+
+<div class="modal  fade savoir-modal-lg7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg7" role="document">
+	    <div class="modal-content wrapper-fiche ">
+		    <div class="modal-body">
+				<h3 class="titre-conduite" ><span style="color: orangered;font-size: 30px;" class="glyphicon glyphicon-triangle-right"></span>Conduite à tenir</h3>
+				<p>Conseiller à vos patients de toujours garder une preuve de recherche d’emploi: liste d’employeurs contactés et/ou de candidatures spontanées, lettres de refus, lettres d’invitation aux entretiens d’embauche. Ces preuves peuvent être utiles.</p>
+			</div>	
+		    <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+		    </div>
+	    </div>
+	</div>
+</div>
+	
+
+<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

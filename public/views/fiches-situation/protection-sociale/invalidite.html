@@ -1,0 +1,106 @@
+
+		<div class="row">
+		  <div class="col-sm-12 titre"> Docteur, on me propose de me mettre en invalidité <i class="zmdi zmdi-compass icon-savoir" data-toggle="modal" style="margin-left: 35%;" data-target=".savoir-modal-lg5"  style="color: white;cursor: pointer;"></i></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 citation">
+			  	<p><em><blockquote>"Le patient a le sentiment d’être mis “sur la touche”. L’invalidité PEUT ÊTRE VÉCUE négativement alors que, dans certains cas, elle sera bénéfique, notamment d’un point de vue financier."</blockquote></em>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">DE QUOI S’AGIT-IL?</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<ul class="liste-reponse"> 
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>Votre patient était-il en arrêt de travail depuis plus de 6 mois (longue maladie) et a-t-il reçu un dossier de demande de pension d’invalidité à constituer: 
+						<ul>
+							<li>de la part des services sociaux</li>
+							<li>de la part de la médecine du travail</li>
+							<li>de la part d’un médecin traitant</li>
+							<li>de la part d’un médecin conseil de la caisse de SS</li>
+						</ul>
+					</li>
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>A-t-il reçu la décision d’invalidité prise par le médecin conseil? </li>
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>S’agit-il des suites d’un accident du travail?<br><button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('assurance-invalidite');">Voir Assurance invalidité</button> et <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('accident-travail');">Voir Accident de travail</button></li>
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>Ou s’agit-il uniquement d’une proposition qu’il attendait des services sociaux suite au versement pendant 3 ans d’indemnités journalières liées à une longue maladie? </li> 
+				</ul>
+				<p class="attention"><i style="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span> Dès qu’il est informé du classement du salarié en invalidité 2ème catégorie, il appartient à l’employeur d’organiser une visite de reprise avec le médecin du travail. A l’issue de cette visite, si aucun poste adapté ne lui est proposé, il sera licencié.</p>
+			 </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">IL EST ALORS POSSIBLE QUE</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse1=true"><em>Le patient ne désire pas être placé en invalidité car il veut pouvoir retrouver une activité</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span><b> Il peut contester la décision:</b> celle ci concerne l’attribution par la caisse de l’invalidité d’un taux d’incapacité partielle permanente et le classement de la personne dans une des 3 catégories d’invalidité reconnue: I, II ou III.<br> Votre patient doit alors contester cette décision devant le Tribunal du Contentieux de l’Incapacité (TCI). Il devra le faire dans un délai de 2 mois à partir de la notification de la décision</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span><b> Remarque</b><br> Pour en arriver là, on peut supposer que votre patient, aura parfois contesté des décisions administratives ou médicales qui auront été déjà prises à son encontre par sa caisse </li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span><b> Il faut savoir:</b><br>Que les décisions administratives (refus de remboursement, refus d’I.J) ou médicales peuvent être contestées devant:<br> la Commission de Recours Amiable (CRA), puis devant le Tribunal des Affaires de la SS (TASS) et en dernier recours devant la Cour d’Appel, voire de Cassation.<br>Que les décisions médicales contestées peuvent faire l’objet par le patient d’une demande d’experti se médicale avec nomination d’un expert et amener à un recours devant la CRA puis le TASS, etc</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span><b> Que se passe-t-il?</b><br>
+							<ul class="liste-reponse">
+								<li>Si votre patient a perçu des I.J pendant 3 ans, il ne percevra plus rien.</li>
+								<li>Il pourra continuer à travailler dans la même entreprise mais à un autre poste dans le cadre d’un reclassement professionnel. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('inaptitude');">Voir Inaptitude au travail</button></li>
+							</ul>
+						</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse2=true"><em>Il désire simplement être informé</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span><button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('assurance-invalidite');">Voir Assurance invalidite</button></li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse3=true"><em>Il désire être aidé pour ses démarches</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Orientez-le vers l’AS de la SS.<br> Une lettre du médecin traitant au médecin conseil de la SS sera bienvenue. <button ui-sref="115" class="btn btn-default btn-LT">Lettre type</button></li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+
+<div class="modal  fade savoir-modal-lg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg5" role="document">
+	    <div class="modal-content wrapper-fiche ">
+		    <div class="modal-body">
+				<h3 class="titre-conduite" ><span style="color: orangered;font-size: 30px;" class="glyphicon glyphicon-triangle-right"></span>Conduite à tenir</h3>
+				<p> Faites remarquer à votre patient que l’acceptation d’une pension d’invalidité n’empêche pas de rechercher un emploi même s’il bénéficie d’une IIème catégorie. Lors de l’envoi des questionnaires trimestriels de ressources par la caisse d’invalidité, la reprise d’un emploi est listée parmi les réponses possibles. Les salaires versés au titre de cette reprise d’activité, doivent simplement être mentionnés, justificatifs à l’appui. La pension est alors recalculée et éventuellement suspendue pendant le temps de cette activité.<br> Sachez en outre, qu’en tant que médecin traitant, vous pouvez appuyer sa démarche en vue de demander une expertise médicale dans le cas de contestation d’une décision médicale prise par sa caisse.</p>
+			</div>	
+	    <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	    </div>
+	    </div>
+	</div>
+</div>
+	
+<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

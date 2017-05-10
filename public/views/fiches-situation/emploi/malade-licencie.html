@@ -1,0 +1,94 @@
+	<div class="row">
+		  <div class="col-sm-12 titre"> Docteur, je suis en arrêt de maladie et on veut me licencier</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 citation">
+		  	<p><em><blockquote>"Il faut que votre patient connaisse la réponse à deux questions. Pendant l’arrêt de travail, le licenciement ne peut intervenir que pour une cause étrangère à la maladie (exemples: suppression de poste, faute professionnelle...). La maladie de courte durée n’est pas, en effet, une cause de rupture de contrat de travail." </blockquote></em>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">QUE FAIRE?</h3>
+		  </div>
+		</div>
+		<div class="row"> 
+		  <div class="col-sm-12 ">
+		  	<p class="titre-question"><em>Peut-il y avoir licenciement pour maladie?</em></p>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Il existe cependant trois motifs de licenciement directement liés à la maladie</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span><b>Le patient n’a pas respecté les obligations pendant son arrêt de travail</b>
+							<ul>
+								<li>Envoyer l’arrêt de travail sous 48h à son employeur.</li>
+								<li>S’abstenir de toute activité pendant l’arrêt de travail.</li>
+								<li>Reprendre son travail à la date prévue, sauf prolongation.</li>
+							</ul>
+						</li> 
+					</ul>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span><b>Votre patient cumule les arrêts de travail ce qui, du point de vue des employeurs, gêne la bonne marche de l’entreprise. </b>
+							<ul>
+								<li>Dans ce cas, et sous certaines conditions, la jurisprudence accorde que le licenciement du salarié est justifié.</li>
+							</ul>
+						</li> 
+					</ul>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span><b>Suite à une inaptitude au travail constatée par la médecine du travail,</b><br> 
+						son employeur n’a pu, dans un délai d’un mois, procéder à son reclassement professionnel ou bien le salarié a refusé le reclassement proposé. l’employeur peut effectivement le licencier.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('inaptitude');" >Voir Inaptitude au travail</button><br> </li>
+						<li>Si le licenciement correspond à une impossibilité de trouver dans l’entreprise un poste de reclassement ou si le refus du salarié d’occuper un poste aménagé n’est pas jugé abusif, l’employeur versera au salarié une indemnité compensatrice de préavis et une indemnité spéciale de licenciement égale au double de l’indemnité légale.</li>
+						<li>Dans le cas contraire, refus abusif du salarié d’occuper un poste proposé, l’indemnité versée correspondra à l’indemnité légale ou conventionnelle.</li>
+					</ul>
+					<br>
+					<h4 class="savoir" ><i class="zmdi zmdi-notifications-active"></i> NOTA BENE</h4>
+					<p> Le médecin du travail est seul juge de l’aptitude ou de l’inaptitude au travail du salarié. Étant assujetti au secret professionnel, il ne peut en aucun cas transmettre des informations médicales à l’employeur.</p>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>Si le patient fait l’objet d’une discrimination</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p>(due à sa nationalité, sa maladie, sa sexualité…) de la part de son employeur, avec pour conséquence un risque de licenciement;</p>
+					<ul class="liste-reponse"> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span>lui conseiller d’en informer l’inspection du travail. <br>Par ailleurs, la démission en cas de pression de l’employeur peut être reconnue comme légitime et permettre au patient de bénéficier de l’allocation chômage.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('demissions-legitimes');" >Voir Cas de démissions légitimes</button><br> </li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span>Contacter le DEFENSEUR DES DROITS, soit via le site internet dédié, soit par courrier motivé avec justificatifs au 7 rue Florentin à Paris 75008. Une demande peut également être déposée auprès des délégués du Défenseur des droits, dans les préfectures ou sous préfectures</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">LES RECOURS</h3>
+		  </div>
+		</div>
+		<div class="row"> 
+		  <div class="col-sm-12 ">
+		  	<p>Le licenciement abusif accentue la fragilité psychologique des personnes, qui ont tendance à ne pas utiliser toutes les voies de recours possibles.<br> Les conseils des prud’hommes sont plus particulièrement chargés de trancher les litiges, notamment en cas de licenciement abusif. Il faut alors saisir la section concernée (commerce, industrie...). <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('conseil-prudhommes');" >Voir Conseil des prud'hommes</button><br>  </p>
+		  </div>
+		</div>
+		<br>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<p class="attention"><i style="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span> Si un avocat intervient, vérifier si l’état des ressources ne nécessite pas une demande d’aide juridictionnelle totale (moins de 936 € de ressources mensuelles en 2014 pour un individu sans personne à charge) ou partielle (moins de 1404 € de ressources mensuelles en 2014). <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('aide-juridictionnelle');" >Voir Aide juridictionnelle</button><br></p>
+		  </div>
+		</div>
+		
+	<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

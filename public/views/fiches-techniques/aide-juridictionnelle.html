@@ -1,0 +1,90 @@
+		<div class="row">
+		  	<div class="col-sm-12 titre-FT">Aide juridictionnelle<i class="zmdi zmdi-compass icon-savoir" data-toggle="modal" style="margin-left: 35%;" data-target=".savoir-modal-lg10"  style="color: white;cursor: pointer;"></i></div>
+		</div>
+		<div class="row">
+		 	<div class="col-sm-12 citation">
+		  		<p><em><blockquote>"L’aide juridictionnelle permet, si vous avez de faibles ressources, de bénéficier d’une prise en charge totale ou partielle par l’État des honoraires et frais de justice (avocat, huissier, expert, etc.)." </blockquote></em>
+				</p>
+		  	</div>
+		</div>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">Conditions d’accès </h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse ">
+				<div class="wrapper-reponse">
+					<ul>
+						<li>Être français ou ressortissant de l’UE </li>
+						<li>Etranger résidant habituellement et régulièrement en France</li>
+						<li>Demandeur d’asile</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse1=true"><em>Etranger en situation irrégulière dans une des configurations suivantes:</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<ul>
+						<li>maintenu en zone d’attente</li>
+						<li>retenu pour vérification de droit au séjour</li>
+						<li>Frappé d’une mesure d’éloignement</li>
+						<li>Placé en centre de rétention</li>
+					</ul>
+					<p><b>Il faut résider dans la commune</b> ou le département et disposer de faibles revenus pour obtenir une aide totale (- de 936 € en 2014 pour une personne seule) ou partielle (- de 1572 € en 2014 pour une personne = aide partielle 15%). </p>
+					<p><b>Les ressources prises en compte</b> sont celle du requérant, des personnes à sa charge ou vivant sous le même toit. En sont exclues les prestations familiales, les ALS ou APL, la PCH, le RSA socle, l’allocation supplémentaire de solidarité. En revanche, l’AAH est comptabilisée.</p>
+					<p>Pour cela, fournir les justificatifs exigés par le formulaire téléchargeable en ligne CERFA n°12467+01.</p>
+					<p>La demande est à déposer au bureau d’Aide Juridictionnelle compétent, généralement situé dans les locaux du TGI du lieu de résidence. Lorsque l’affaire qui doit être plaidée est appelée devant une juridiction différente, la demande est à déposer soit au TGI de son domicile, soit au TGI de la juridiction concernée.</p>
+					<h4 class="savoir-FT" ><span class="glyphicon glyphicon-arrow-right savoir-arrow-FT" ></span> NOTA BENE</h4>
+					<p class="italic">Le dépôt de la demande fait l’objet d’un reçu de dépôt qui permet, si c’est nécessaire lorsque la date d’audience est trop rapprochée, de demander au Président du Tribunal d’accorder un report d’audience. Ce délai permet la nomination d’un avocat désigné par le bureau de l’Ordre, et de négocier un arrangement avec le plaignant, surtout en matière d’expulsion</p>
+					<div class="row">
+						<div class="col-sm-12 ">
+							<p class="attention"><i style="color: #1CA25F;" class="zmdi zmdi-alert-polygon"></i> <span style="color: #1CA25F; font-weight:bold;">ATTENTION:</span> Dans le cas d’une procédure devant le tribunal administratif suite au refus d’une demande de régularisation de séjour par la préfecture, dans le cas où le requérant est supposé être hébergé à titre gratuit par un hébergeant, il arrive que le tribunal considère les ressources de l’hébergeant comme devant être prises en compte dans le calcul du droit à l’AJ. Le danger est que le requérant risque d’être débouté de sa demande d’AJ. Il doit donc démontrer l’absence de liens de sujétion et d’intérêts entre lui et l’hébergeant. La difficulté réside surtout en cas de cohabitation hétérosexuelle.
+							</p>
+						</div>
+					</div>
+					<h4 class="savoir-FT" ><span class="glyphicon glyphicon-arrow-right savoir-arrow-FT" ></span> NOTA BENE</h4>
+					<p class="italic"> Des permanences juridiques existent pour s’informer et évaluer les chances d’une procédure judiciaire. Elles sont tenues par des avocats, des juristes, voire des médiateurs, pour tenter de régler certains petits litiges à l’amiable.</p>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse2=true"><em>Contacter </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<ul>
+						<li>Le service juridique de la mairie.</li>
+						<li>Les antennes de justice du département.</li>
+						<li>Les permanences juridiques gratuites du palais de justice du département. </li>
+						<li>Les maisons de justice et du droit <a target="_blank" href="http://www.justice.gouv.fr/region/mjdanten.html"> http://www.justice.gouv.fr/region/mjdanten.html</a>  </li>
+						<li>Le conseil départemental d’accès au droit <a target="_blank" href="http://www.justice.gouv.fr/region/cdad.html">http:// www.justice.gouv.fr/region/cdad.html</a> </li>
+					</ul>
+					<p><b>Il faut attendre entre deux et quatre mois pour obtenir une réponse.</b></p>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+
+
+
+
+<div class="modal  fade savoir-modal-lg10" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg10" role="document">
+	    <div class="modal-content wrapper-fiche ">
+		    <div class="modal-body">
+				<h3 class="titre-conduite" ><span style="color: orangered;font-size: 30px;" class="glyphicon glyphicon-triangle-right"></span>Conduite à tenir</h3>
+				<p>En règle générale, les délais d’instruction d’une demande d’AJ peuvent être particulièrement longs, de 2 à 4 mois. Il faut donc ne pas attendre pour effectuer la demande. Le plus tôt est le mieux, dès la réception à domicile de la citation à comparaitre. Lorsque l’aide juridictionnelle n’a pas fait l’objet d’un accord de la part du BAJ avant la date d’audience, il est indispensable de se présenter malgré tout à l’audience afin de demander un report d’audience. Ce report d’audience est généralement accordé. Produire à cette occasion l’attestation de dépôt de la demande d’AJ.</p>
+			</div>	
+		    <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+		    </div>
+	    </div>
+	</div>
+</div>
+	
+
+
+

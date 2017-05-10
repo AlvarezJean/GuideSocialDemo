@@ -1,0 +1,179 @@
+
+		<div class="row">
+		  <div class="col-sm-12 titre">Docteur, je n'ai plus de sécurité sociale<i class="zmdi zmdi-compass icon-savoir" data-toggle="modal" style="margin-left: 35%;" data-target=".savoir-modal-lg6"  style="color: white;cursor: pointer;"></i></div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 citation">
+		  	<p><em><blockquote>"Le numéro de SS ne donne pas accès systématiquement à l’ouverture des droits. L’accès à la
+				protection sociale sera déterminé en fonction de la situation sociale de l’individu.
+				Pour être efficace lors de ses démarches, le patient doit savoir formuler sa demande. Voici donc
+				quelques critères d’évaluation sur lesquels vous fonder pour déterminer la situation du patient.
+				<br>Normalement tout le monde a droit à une couverture sociale.
+				<br>Dans la plupart des cas, la démarche consiste à effectuer une réactualisation auprès de la caisse de
+				SS (CPAM, MSA …) dont le patient dépend."</blockquote></em>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">DE QUOI S'AGIT-IL?</h3>
+		  </div>
+		</div>
+		<div class="row"> 
+		  <div class="col-sm-12 ">
+		  	<p class="titre-question"><em>Dans quelle situation votre patient se trouve-t-il?</em></p>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 ">
+			  	<p >Il est important de demander à votre patient s'il croit qu'il n'a plus de droits ouverts ou si c'est sa caisse qui le lui a dit. Ne pas oublier que souvent les patients confondent les droits entre eux: l'ALD avec une complémentaire, la CMU de mbase avec la CMUC, etc...<br>
+			  	Dans tous les cas demandez à votre patient de faire confirmer les informations qu'il croit détenir par sa caisse. <br>
+			  	Vous-même pouvez obtenir une information le concernant, avec son accord, en téléphonant au <a href="tel:08-11-70-90-75">08 11 70 90 75 </a> le numéro de la CPAM réservé aux professionnels de santé. Il vous suffira de donner votre N° de Finess ou Adeli.
+			  	</p>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse1=true"><em>Il n'a pas ou plus de droits ouverts et ne peut plus bénéficier d'aucun remboursement</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<ul class="liste-reponse"> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span> Il a perdu son droit à remboursement à l'issue de la période de propagation de ses droits acquis au titre d'un travail ou de prestations chômage et il n'a pas de CMU</li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span> Il n'est pas ayant droit.</li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span> Votre patient n'a pas de droits ouverts à son propre nom et n'est pas immatriculé ni affilié à une caisse.</li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span> Votre patient est étranger et a perdu ses droits à la CMUC à l'échéance de leur durée de validité en même temps que son droit au séjour.</li> 
+					</ul>
+					<p> Il peut néanmoins bénéficier de l'AME:<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('protection-etrangers');" >Voir Protection sociale des étrangers</button><br>
+						Tout ceci est à verifier auprès de sa caisse, où il est affilié en fonction de son adresse.S'il a déménagé récemment, sa caisse de référence est celle de son ancien domicile à laquelle il devra demander la mutation de son dossier.<br>
+						Sa caisse étudiera une eventuelle prolongation de droits ou une demande de cmu de base et complémentaire. <br>
+						Orientez votre patient vers une assistante sociale de la CPAM ou simplement vers sa caisse avec une lettre d'accompagnement.
+					</p>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 ">
+			<h6 class="titre-reponse" ng-click="reponse2=true"><em>Sa caisse lui apprend qu'il ne bénéficie pas ou plus de l'exonération du ticket modérateur</em></h6>
+				<div class="wrapper-reponse"  ng-show="reponse2 ">
+					<ul class="liste-reponse "> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> Il n'en bénéficie pas mais y a peut être droit.<br>Votre patient doit vérifier son droit à éventuel à une CMU complémentaire ou à une aide à la complémentaire santé(ACS)</li> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> 
+						  Il y a eu droit mais il n'en bénéficie plus.<br>
+						  Sa CMU Complémentaire est à renouveler chaque annéee (demande à faire 2 mois environ avant la date d'échéance).<br>
+						  Si ses ressoucres ont augmenté dans la limite de 26%/plafond, il peut obtenir une aide au paiement d'une cotisation de mutuelle.<br>
+						  <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('complementaires-sante');" >Voir Complémentaires de santé</button>et<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('ticket-moderateur');" >Voir Cas du ticket modérateur</button></a>
+						</li> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> Son état de santé justifie l'instruction d'une demande de protocole de soins.<br>
+						Si vous n'êtes pas le médecin traitant, l'exénoration du ticket modérateur sera accordée pour une période de 6 mois seulement.
+						</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse2=false">FERMER</button>
+				</div>
+			 </div>
+		</div>  
+		<div class="row">
+			<div class="col-sm-12">
+			<h6 class="titre-reponse" ng-click="reponse3=true"><em>Sa caisse lui que certains de ses droits sont modifiés suite à un changement de situation.</em></h6>
+				<div class="wrapper-reponse"  ng-show="reponse3 ">
+					<ul class="liste-reponse "> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> Ce peut-être le cas
+							<ul>
+								<li>s'il perd sa qualité d'ayant droit,</li>
+								<li>s'il perd le droit à la complémentaire CMU,</li>
+								<li>s'il passe d'un statut étudiant à un statut salarié,</li>
+								<li>s'il passe au RSA,</li>
+								<li>si ses droits au séjour ne sont plus validés,</li>
+								<li>s'il arrive à échéance de ses droits validés,</li>
+								<li>s'il a déménagé,</li>
+								<li>si une grossesse doit être déclarée, etc..</li>
+							</ul>
+						
+						  Dans tous les cas, orientez votre patient(e) vers un service social spécialisé de la CPAM en lui demandant d'apporter tous les justificatifs prouvant la réalité de sa nouvelle situation: attestations / nouveau domicile, fiche de paie, pièces d'identité, livret de famille, passeport, titre de séjour, certificat de grossesse, attestation RSA. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('couverture-sociale');" >Voir Couverture sociale</button><br>
+						  Concernant les étrangers, il est parfois utile d'orienter la personne vers un service spécialisé dans le droit des étrangers : GISTI, COMEDE, CIMADE, etc.. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('protection-etrangers');" >Voir Protection sociale des étrangers</button></a>
+						</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse3=false">FERMER</button>
+				</div>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+			<h6 class="titre-reponse" ng-click="reponse4=true"><em>Votre patient n'a pas de carte Vitale</em></h6>
+				<div class="wrapper-reponse"   ng-show="reponse4 ">
+					<ul class="liste-reponse "> 
+						<li><span  class="glyphicon glyphicon-triangle-right"></span> Il l'a perdue: il doit se rendre à sa caisse de SS pour en demander une autre avec son attestation de droits et/ou les pièces justificatives.
+						</li> 
+						<li><span  class="glyphicon glyphicon-triangle-right"></span>
+							Il ne l'a jamais eue car il a quitté ses parents ou est SDF : il doit faire une première demande auprès de sa caisse de SS avec les pièces justificatives.	  
+						</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse4=false">FERMER</button>
+				</div>
+			 </div>
+		</div>  
+		<div class="row">
+			<div class="col-sm-12">
+			<h6 class="titre-reponse" ng-click="reponse5=true"><em>Votre patient ne perçoit plus d'indemnités journalières (IJ)</em></h6>
+				<div class="wrapper-reponse"   ng-show="reponse5 ">
+					<ul class="liste-reponse "> 
+						<li><span  class="glyphicon glyphicon-triangle-right"></span> Il n'a pas répondu au courrier de réexamen des droits de sa caisse de SS envoyé au bout de 3 premiers mois d'arrêt. Contacter la caisse SS.
+						</li> 
+						<li>Son arrêt de travail dépasse 6 mois, les conditions administratives changent.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('arret-maladie');" >Voir Arrêt de maladie</button></li>
+						<li><span  class="glyphicon glyphicon-triangle-right"></span>
+							Il a cumulé des prestations et il y a rupture d'IJ. Contacter une AS de la caisse SS pour l'échelonnement des dettes pour un recours gracieux auprès de la caisse de SS.<button ui-sref="106" class="btn btn-default btn-LT">Lettre type</button></a>	  
+						</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse5=false">FERMER</button>
+				</div>
+			 </div>
+		</div>
+
+
+ <div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>
+
+<div class="modal  fade savoir-modal-lg6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg6" role="document">
+	    <div class="modal-content wrapper-fiche ">
+		    <div class="modal-body">
+				<h3 class="titre-conduite" ><span style="color: orangered;font-size: 30px;" class="glyphicon glyphicon-triangle-right"></span>Conduite à tenir</h3>
+				<ul class="liste-reponse"> 
+					<li><b><h4><em>Selon la situation du patient:</em></h4></b></li>
+					<li><b>Travailleur salarié :</b> vérifier la réactualisation à la CPAM du domicile.<button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="couverture-sociale" >Voir Couverture sociale </button></li>
+					<li><b>Chômeur indemnisé par Pôle Emploi :</b> vérifier la réactualisation à la CPAM du domicile.<button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="couverture-sociale">Voir Couverture sociale </button> <button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="CS-chomeur">Voir Couverture sociale des chômeurs</button></li>
+					<li><b>Chômeur non indemnisé (moins de 12 mois) :</b> effectuer la réactualisation à la CPAM du domicile.<button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="couverture-sociale">Voir Couverture sociale </button> <button  class="btn btn-default btn-fiche" data-dismiss="modal"  ui-sref="CS-chomeur">Voir Couverture sociale des chômeurs</button></li>
+					<li><b>En attente du RSA.Attention :</b> il peut y avoir rupture des droits. <button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="RSA">Voir RSA </button> </li>
+					<li><b>Bénéficiaire du RSA :</b> vérifier l'ouverture des droits à la CPAM du domicile.<button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="RSA">Voir RSA </button></li>
+					<li><b>Sans revenus, en attente de l'AAH. Attention :</b> il peut y avoir rupture des droits. <button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="RSA">Voir RSA </button></li>
+					<li><b>Bénéficiaire d'une AAH :</b> vérifier l'ouverture des droits à la CPAM du domicile, notamment les droits à une complémentaire santé.</li>
+					<li><b>Bénéficiaire d'une pension vieillesse :</b> il y a changement de régime. S'adresse à la CPAM du domicile.</li>
+					<li><b>Bénéficiaire d'une invalidité :</b> s'adresser à la CPAM du domicile.</li>
+					<li><b>Jeune de moins de 25 ans :</b> s'adresser à la CPAM du domicile pour rechercher les droits à la couverture sociale.</li>
+					<li>Séparé / Divorcé. <button  class="btn btn-default btn-fiche" data-dismiss="modal"  ui-sref="couverture-sociale">Voir Couverture sociale </button></li>
+					<li><b>Ayant droit qui quitte l'assuré social :</b> s'adresser à la CPAM du domicile. <button  class="btn btn-default btn-fiche"  data-dismiss="modal" ui-sref="couverture-sociale">Voir Couverture sociale </button></li>
+				</ul>
+				<div class="row">
+					<div class="col-sm-12 wrapper-savoir">
+						<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+						<p><b>Pour lutter contres les descriminations au travail :</b> Parfois, lors d'une embauche, l'employeur demande sa carte Vitale et/ou l'attestation de droits. Si la personne a une ALD (attestation avec mention 100%), elle peut obtenir un duplicata auprès de sa caisse de SS sans la mention 100%.<br>Selon l'article R161-33-4 du code du travail de la sécurité Sociale, la caisse est tenue de délivrer cette attestation.</p>
+					</div>
+				</div>
+			</div>	
+	    <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	    </div>
+	    </div>
+	</div>
+</div>
+	

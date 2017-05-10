@@ -1,0 +1,67 @@
+	<div class="row">
+		  <div class="col-sm-12 titre">Docteur, on me dit que je peux faire une demande d’AAH</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 citation">
+		  	<p><em><blockquote>"L’AAH est destinée à apporter une aide financière aux personnes handicapées disposant de revenus modestes et n’ayant droit ni aux versement d’IJ de la SS ni à une pension d’invalidité au titre d’une activité salariée. Pour en bénéficier, il faut remplir conjointement des conditions médicales, des conditions administratives et des conditions de ressources." </blockquote></em>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">VÉRIFIER QUE</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<p>Votre patient a ouvert des droits au régime général de la SS sous forme de prestations en espèces et en nature; dans ce cas, il doit effectuer une demande d’invalidité (et non d’AAH). <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('assurance-invalidité');">Voir Assurance invalidité</button></p>
+				<p>Sa situation administrative et ses ressources lui permettront de bénéficier d’une AAH. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('handicap');">Voir Handicap et prestations</button></p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">COMMENT FAIRE UNE DEMANDE? </h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<ul class="liste-reponse"> 
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>Le patient retire auprès de la MDPH, de la CAF ou du CCAS le dossier d’AAH. </li> 
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>Si possible, aidez votre patient à remplir avec beaucoup d’attention la partie administrative ainsi qu’à réunir les documents nécessaires inscrits dans le dossier</li> 
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>Le médecin remplit soigneusement le certificat médical. </li> 
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>Les dossiers sont à retourner complets à la MDPH qui effectue une évaluation médicale. </li> 
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>Les droits sont attribués sur décision de la CDAPH (Commission des droits et de l’autonomie des personnes handicapées).</li> 
+				</ul>
+				<div class="col-sm-12 wrapper-savoir">
+				<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+				<p> informez votre patient que la durée d’attribution peut être longue, en attendant il peut bénéficier du RSA <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('RSA');">Voir RSA</button></p>
+				</div>
+			</div>
+		</div>
+			<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">APRÈS ACCEPTATION DE SON AAH  </h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<ul class="liste-reponse"> 
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>Les droits sont ouverts pour une période limitée dans le temps. </li> 
+					<li><span  class="glyphicon glyphicon-triangle-right "></span>La MDPH envoie la notification de décision à l’organisme payeur (CAF ou MSA) qui vérifie les conditions administratives et de ressources.<br>Selon le taux d’incapacité attribué, possibilité de bénéficier de prestations et droits supplémentaires. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('handicap');">Voir Handicap et prestations</button></li> 
+				</ul>
+				<p class="attention"><i style="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span> Informer votre patient sur le dispositif dit de «rupture conventionnelle» permettant à un salarié de rompre son contrat de travail en accord avec l’employeur.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('conges-particuliers');">Voir Congés particuliers</button><br>Ce dispositif peut permettre de trouver une solution de type consensuelle à défaut d’être la plus satisfaisante. Elle permet de sauvegarder l’essentiel des droits notamment le droit à une indemnisation chômage.</p>
+			</div>
+		</div>
+		
+		<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

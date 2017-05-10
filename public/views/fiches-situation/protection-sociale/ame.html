@@ -1,0 +1,87 @@
+
+		<div class="row">
+		  <div class="col-sm-12 titre">Docteur, je n’ai plus droit à l’aide médicale de l’état (AME)<i class="zmdi zmdi-compass icon-savoir" data-toggle="modal" style="margin-left: 35%;" data-target=".savoir-modal-lg3"  style="color: white;cursor: pointer;"></i></div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 citation">
+		  	<p><em><blockquote>"L’AME est attribuée aux étrangers en situation irrégulière «sans papiers» sous conditions de résidence et de ressources." </em></blockquote>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">DE QUOI S'AGIT-IL?</h3>
+		  </div>
+		</div>
+		<div class="row"> 
+		  <div class="col-sm-12 ">
+		  	<p class="titre-question"><em>Dans quelle situation votre patient se trouve-t-il?</em></p>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse1=true"><em>On lui refuse le renouvellement </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<ul class="liste-reponse"> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span><em>S’il fait l’objet d’une procédure de régularisation à la préfecture et dispose d’un récépissé de demande, il perd le bénéfice de l’AME.</em><br>Dans ce cas, il peut prétendre à la CMU et CMUC sous conditions.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CMU');">Voir CMU</button> et pièces à joindre p.41</li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span><em> S’il ne peut fournir les justificatifs demandés.</em><br>Les pièces à joindre sont difficiles à réunir pour un sans-papiers. Le médecin traitant peut accompagner le patient dans ses démarches.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('protection-etrangers');">Voir Protection sociale des étrangers</button></li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span><em>Si sa déclaration de ressources est supérieure au barème d’attribution de l’AME.</em><br>Si c’est le cas, il faut vérifier que les ressources prises en compte sont prévues par la loi. </li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span><em>S’il n’a plus de domicile. Un rejet peut s’expliquer par une absence de réponse de sa part à une convocation des services d’aide médicale. Lui conseiller de vérifier régulièrement son courrier auprès de l’association chez laquelle il est domicilié.</em><br>Les SDF peuvent élire domicile soit auprès d’un CCAS, soit auprès d’un organisme agréé</li> 
+						  <li><b>Recours: </b>en cas de refus de la caisse de SS, il faut diriger le patient vers l’AS d’une association spécialisée dans le droit des personnes migrantes. Carnet d’adresses p.123 </li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 ">
+			<h6 class="titre-reponse" ng-click="reponse2=true"><em>Son attestation n’est plus valable</em></h6>
+				<div class="wrapper-reponse"  ng-show="reponse2 ">
+					<p>L’AME est accordée pour un an et peut être reconduite chaque année tant que les conditi ons de res
+						sources sont remplies. Limiter le montant des ressources à des revenus ne dépassant pas le montant du forfait ALS du RSA soit 61,12 euros par mois en décembre 2014 et une somme raisonnable ne dépassant pas 200 euros de dépenses alimentaires pour une personne par mois.
+					</p>
+					<ul class="liste-reponse "> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> Le renouvellement des droits à l’AME ne se fait pas automatiquement. </li> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>On peut fournir une déclaration de non imposition sur la base d’une somme minimale attestée par les impôts mais ne donnant pas lieu à imposition. Une déclaration ne révélant aucun revenu n’est pas crédible et la CPAM risque d’imputer au demandeur les ressources de son logeur même s’il n’entretient aucun lien de sujétion économique avec lui.
+						</li> 
+					</ul>
+					<p>Deux mois avant la date d’expiration de ses droits à l’AME, le patient doit déposer une nouvelle demande d’AME auprès de sa caisse de SS.</p>
+					<button  class="btn btn-default" ng-click="reponse2=false">FERMER</button>
+				</div>
+			 </div>
+		</div>  
+	
+
+
+ <div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>
+
+<div class="modal  fade savoir-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg3" role="document">
+	    <div class="modal-content wrapper-fiche ">
+		    <div class="modal-body">
+				<h3 class="titre-conduite" ><span style="color: orangered;font-size: 30px;" class="glyphicon glyphicon-triangle-right"></span>Conduite à tenir en cas d'urgence de soins</h3>
+				<ul > 
+					<li>Envoyer votre patient aux urgences de l’hôpital avec une lettre. </li>
+					<li>Ou l’envoyer à la PASS, s’il en existe une près de son domicile. Carnet d’adresses p et liste des PASS sur <a target="_blank" href="http://www.sante.gouv.fr/htm/pointsur/praps/index.html">www.sante.gouv.fr</a> </li>
+					<li>Le médecin (obligatoirement un Prati cien hospitalier ou un médecin agrée par la préfecture, sur liste,) peut aider le patient à faire la demande d’un titre de séjour pour raisons de santé. Faire attention à la formulation <button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="protection-etrangers">Voir Protection sociale des étrangers</button><button data-dismiss="modal" ui-sref="112" class="btn btn-default btn-LT">Lettre type</button></li>
+				</ul>
+			</div>	
+		    <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+		    </div>
+	    </div>
+	</div>
+</div>
+	
+

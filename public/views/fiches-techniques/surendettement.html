@@ -1,0 +1,124 @@
+		<div class="row">
+		  	<div class="col-sm-12 titre-FT">Surendettement des familles et faillites familiales</div>
+		</div>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">LA COMMISSION DE SURENDETTEMENT DES FAMILLES </h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse" >
+					<p>Votre patient, en situation de surendettement, doit savoir qu’il existe une commission de surendettement par département. Elle est présidée par le préfet.</p>
+				</div>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse-FT" ng-click="reponse1=true"><em>La commission de surendettement est composée des membres suivants:  </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<ul>
+						<li>préfet,</li>
+						<li>trésorier général payeur,</li>
+						<li>représentant des créanciers,</li>
+						<li>représentant des consommateurs,</li>
+						<li>représentant de la Banque de France.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse-FT" ng-click="reponse2=true"><em>La procédure </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p><b>A.</b> C’est à lui, le débiteur, d’engager la procédure (gratuite) à l’aide d’une demande écrite signée et adressée à la commission, à laquelle il demande d’intervenir. Il y décrit sa situation familiale, ses revenus, la justification de ses dettes et y joint un état des dettes ou figurent les noms et adresses des débiteurs.<br> Il lui faut également retirer un dossier de «déclaration de surendettement» auprès d’une succursale de la Banque de France du département. <button data-dismiss="modal" ui-sref="pieces-a-joindre" class="btn btn-default btn-PAJ">Pièces à joindre</button><br> Le service social de la mairie peut l’aider à remplir le dossier.<br> Il faut transmettre le dossier par la poste ou le déposer directement au secrétariat de la commission. <button data-dismiss="modal" ui-sref="carnet-adresses" class="btn btn-default btn-CA">Carnet d'adresses</button></p>
+					<p><b>B.</b> Il reçoit alors une lettre de la commission stipulant que la demande a bien été reçue.</p>
+					<p><b>C.</b> La commission examine la recevabilité de la demande, sur les critères suivants:</p>
+					<ul>
+						<li>les dettes sont non professionnelles,</li>
+						<li>le débiteur doit pouvoir faire la preuve de sa bonne foi.</li>
+					</ul>
+					<p><b>D.</b> La commission dresse ensuite l’état de l’endettement du débiteur:</p>
+					<ul>
+						<li>elle peut s’enquérir auprès de la Banque de France des incidents de paiement du débiteur,</li>
+						<li>elle peut faire des recherches auprès des créanciers.</li>
+					</ul>
+					<p><b>E.</b> La commission établit un plan de redressement acceptable par les deux parties: débiteur et créanciers.<br> Elle peut proposer un rééchelonnement de la dette, une réduction du taux de crédit, l’effacement de pénalités.<br>Les deux parties signent le plan qui, dans les quinze jours qui suivent, doit donner lieu à un début de règlement. <br>À défaut, la seule issue demeure la justice.<br> Le plan de rééchelonnement du paiement de la dette mis en place dépasse rarement 5 ans.</p>
+					<p><b>Les dettes fiscales, non professionnelles peuvent être incluses dans un dossier de surendettement </b></p>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">FAILLITE CIVILE OU PROCÉDURE DITE DE RÉTABLISSEMENT PERSONNEL </h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse" >
+				<p>Dans le cas où la commission de surendettement constate une situation «irrémédiablement compromise» du débiteur, la procédure de rétablissement personnel peut être envisagée (loi Borloo). Réservée aux personnes de bonne foi, surendettées et victimes d’accidents de la vie, cette procédure nécessite l’accord du débiteur. Elle peut être mise en route, en même temps que la procédure citée plus haut, sur demande de la personne endettée. </p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse3=true"><em>A. Saisine du juge de l’exécution </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+						<p> Le juge dispose d’un mois pour convoquer le débiteur et les créanciers. Le jugement d’ouverture de cette procédure suspend les procédures portant sur les dettes autres qu’alimentaires. </p>
+						<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse4=true"><em>B. La phase d’observation. </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse4">
+					<p>Le juge peut ordonner une enquête sociale et/ou un suivi social. Un mandataire peut aussi être désigné. Lors de cette phase, le but est de recenser les créanciers, les créances et de faire le bilan de la situation de la personne endettée. </p>
+					<div class="row">
+						<div class="col-sm-12 ">
+							<p class="attention"><i style="color: #1CA25F;" class="zmdi zmdi-alert-polygon"></i> <span style="color: #1CA25F; font-weight:bold;">ATTENTION:</span> Ce bilan est à la charge du débiteur.
+							</p>
+						</div>
+					</div>
+					<button  class="btn btn-default" ng-click="reponse4=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse5=true"><em>C. La clôture du dossier.</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse5">
+					<p>À l’issue de cette phase, trois issues sont possibles:  </p>
+					<ul>
+						<li>effacement des dettes. </li>
+						<li>plan d’apurement des dettes. </li>
+						<li>la liquidation judiciaire, c’est-à-dire la liquidation du patrimoine personnel, dont sont exclus les «biens meublants concernant la vie courante» ou les «biens non professionnels indispensables à l’exercice de son activité». Le liquidateur doit procéder à la mise en vente amiable ou forcée des biens recensés et payer les créanciers dans un délai de 12 mois.</li>
+					</ul>
+					<h4 class="savoir-FT" ><span class="glyphicon glyphicon-arrow-right savoir-arrow-FT" ></span> A savoir</h4>
+					<p class="italic">le juge peut ordonner un suivi social du débiteur. </p>
+					<div class="row">
+						<div class="col-sm-12 ">
+							<p class="attention"><i style="color: #1CA25F;" class="zmdi zmdi-alert-polygon"></i> <span style="color: #1CA25F; font-weight:bold;">ATTENTION:</span> l’inscription au Fichier national des incidents de remboursement des crédits aux parti culiers (FICP), géré par la Banque de France, est maintenue pendant 5 ans.
+							</p>
+						</div>
+					</div>
+					<h4 class="savoir-FT" ><span class="glyphicon glyphicon-arrow-right savoir-arrow-FT" ></span> A savoir</h4>
+					<p class="italic">un montant au moins égal au RSA doit être laissé mensuellement au débiteur.  </p>
+					<button  class="btn btn-default" ng-click="reponse5=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">LE CRÉDIT MUNICIPAL </h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<p>C‘est une alternative à la demande faite à la commission de surendettement. Rapide pour l’étalement d’un remboursement lorsque le débiteur est salarié. Se renseigner auprès du crédit municipal de la ville.</p>
+		</div>
+
+
+	

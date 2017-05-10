@@ -1,0 +1,70 @@
+		<div class="row">
+		  <div class="col-sm-12 titre">Docteur, je n’ai plus le RSA </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 citation">
+			  	<p><em><blockquote>"Il arrive parfois que le RSA soit suspendu, dégrevé partiellement ou arrêté." </blockquote></em>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">DE QUOI S'AGIT-IL?</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Le patient n’a pas respecté son contrat d’insertion </em></h6>
+					<div class="wrapper-reponse" ng-show="reponse1" >
+						<p>Si la santé de votre patient ne lui permet pas de respecter ce qui est prévu dans son contrat d’insertion, contacter le service social ou joindre une lettre. <button ui-sref="106" class="btn btn-default btn-LT">Lettre type</button></p>
+						<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>Le patient n’a pas répondu aux convocations</em></h6>
+					<div class="wrapper-reponse" ng-show="reponse2" >
+						<p>Si le patient est dans un état dépressif ou dans un état second dû à un traitement, il n’a peut-être pas la vigilance nécessaire pour respecter le calendrier des démarches administratives. Une intermédiation avec l’instance administrative ou l’association en charge du dossier du patient sera nécessaire. </p>
+						<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse3=true"><em>Le patient a travaillé (en dehors du dispositif RSA)</em></h6>
+					<div class="wrapper-reponse" ng-show="reponse3" >
+						<p>
+							Ce cas de figure arrive parfois. Il faut conseiller au patient de déclarer chaque changement de situation à la CAF ou la MSA ou à son interlocuteur en charge de son dossier RSA. Il peut encourir des poursuites et être soumis au remboursement des montants indûment perçus<br>
+							<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('RSA');">Voir RSA</button>
+
+							</p>
+						<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+						<p> les déclarations de revenus sont trimestrielles. Ainsi, une personne ayant travaillé à une période donnée doit prévoir qu’après la déclaration, elle risque de ne pas toucher la totalité de l’allocation. </p>
+						<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse4=true"><em>Le patient a changé de situation (PACS, mariage avec une personne ayant des revenus)</em></h6>
+					<div class="wrapper-reponse" ng-show="reponse4" >
+						<p>Il faut conseiller au patient de déclarer chaque changement de situation à la CAF ou la MSA ou à son interlocuteur chargé de son dossier RSA.</p>
+						<p>Dans tous les cas, rien ne vous empêche de proposer une réunion de concertation entre votre patient et l’instructeur du RSA pour pouvoir trouver les solutions adaptées à la situation du patient. </p>
+						<button  class="btn btn-default" ng-click="reponse4=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+
+		<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

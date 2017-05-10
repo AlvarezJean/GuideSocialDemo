@@ -1,0 +1,291 @@
+		<div class="row">
+		  	<div class="col-sm-12 titre-PAJ">Pièces à joindre</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse1=true"><em>1. Déclarer ses ayants droits</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p>Formulaire S3126a sur <a target="_blank" href="http://www.ameli.fr">www.ameli.fr</a> </p>
+					<p><b>Pour les enfants de moins de 16 ans:</b> copie du livret de famille à jour.</p>
+					<p><b>Pour les enfants de plus de 16 ans:</b> certificat de scolarité ou certificat médical.</p>
+					<p><b>Pour les autres ayants droit:</b> déclaration sur l’honneur précisant le lien de parenté.</p>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse2=true"><em>2. La CMU</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p>Le dossier est à retirer à la CPAM de résidence ou à télécharger sur <a target="_blank"  href="http://www.ameli.fr">www.ameli.fr</a> Joindre les pièces citées.</p>
+					<table class="table table-striped">
+						<thead>
+							<th class="PAJ">Situation du patient</th>
+							<th class="PAJ">Pièces à fournir</th>
+						</thead>
+						<tr>
+							<td>Sans droits mais inscrit à la CPAM</td>
+							<td>
+								<ul>
+									<li>Carte vitale et attestation</li>
+									<li>Carte d'identité</li>
+									<li>Pour octroyer des droits aux personnes à la charge du patient: livret de famille, certificat de concubinage ou attestation de PACS</li>
+									<li>Pour la condition de résidence: bail, facture EDF ou quittance de loyer de plus de 3 mois, certificat d’hébergement</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Membre de l’Espace économique européen (EEE)</td>
+							<td>
+								<ul>
+									<li>Carte d’identité, passeport ou livret de famille </li>
+									<li>Pour la condition de résidence: bail, facture EDF ou quittance de loyer de plus de 3 mois, certificat d’hébergement</li>
+									<li>Pour le droit au séjour: fiche de paie, certificat de travail.</li>
+									<li>Hors conditions de droits au séjour, droits uniquement à l’AME</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Autres nationalités</td>
+							<td>
+								<ul>
+									<li>Pièces justificatives de régularité: titre de séjour, récépissé de demande, convocation ou rendez-vous à la préfecture</li>
+									<li>Pour la condition de résidence: bail, facture EDF ou quittance de loyer de plus de 3 mois, certificat d’hébergement</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Etudiant ou élève</td>
+							<td>Certificat de scolarité</td>
+						</tr>
+					</table>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse3=true"><em>3. La CMU complémentaire et l’aide à l’acquisition d’une complémentaire santé</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<p>Les documents à joindre sont les mêmes que pour la CMU de base, auxquels il faut ajouter les justificatifs de ressources des 12 derniers mois: bulletin de salaire, avis d’imposition, notification de paiement Pôle emploi, CAF.</p>
+					<p>Un même formulaire de la CPAM permet de faire la demande pour les deux dispositifs: S 3711 c sur <a target="_blank"  href="http://www.ameli.fr">www.ameli.fr</a></p>
+					<p><b>Pour les enfants de plus de 16 ans:</b> certificat de scolarité ou certificat médical.</p>
+					<p><b>Pour les autres ayants droit:</b> déclaration sur l’honneur précisant le lien de parenté.</p>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse4=true"><em>4. Invalidité</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse4">
+					<p>Demande d’allocation supplémentaire du Fonds spécial d’invalidité: formulaire S 4151 sur <a target="_blank"  href="http://www.ameli.fr">www.ameli.fr</a></p>
+					<p>Demande de pension: formulaire S 4150 e sur <a target="_blank"  href="http://www.ameli.fr">www.ameli.fr</a></p>
+					<ul>
+						<li>justificatif de résidence pour les étrangers hors EEE,</li>
+						<li>joindre une photocopie de non-imposition si non imposable,</li>
+						<li>notification de rente si le patient bénéficie d’une rente d’accident de travail ou de maladies professionnelles.</li>
+					</ul>
+					<p><b>Carte d’invalidité</b></p>
+					<p><b>Présenter</b></p>
+					<ul>
+						<li>la carte nationale d’identité (ou fiche individuelle d’état civil) ou la carte de séjour (pour les personnes de nationalité étrangère),</li>
+						<li>des pièces de justification de domicile,</li>
+						<li>deux photos d’identité,</li>
+						<li>formulaire spécifique de demande, rempli et signé par le bénéficiaire ou son représentant légal,</li>
+						<li>formulaire pour le certificat médical.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse4=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse5=true"><em>5. Le RSA</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse5">
+					<p><b>Dossier à compléter avec l’assistante sociale et à remettre à la CAF</b></p>
+					<table class="table table-striped">
+						<thead>
+							<th class="PAJ">Pour les allocataires de la CAF ou de la MSA</th>
+							<th class="PAJ"></th>
+						</thead>
+						<tr>
+							<td>Domicilié auprès d’un organisme</td>
+							<td>Attestation de l’organisme agréé (CCAS…)</td>
+						</tr>
+							<td>Travailleur saisonnier</td>
+							<td>Déclaration de revenus de l’année civile précédant la demande</td>
+						</tr>
+						<tr>
+							<td>Travailleur non salarié</td>
+							<td>Formulaire complémentaire travailleur indépendant ou exploitant agricole</td>
+						</tr>
+						<tr>
+							<td>Propriétaire de terrain, logement</td>
+							<td>Derniers avis de taxe foncière</td>
+						</tr>
+						<tr>
+							<td>Pensionné de vieillesse, d’invalidité ou d’une rente d’accident du travail</td>
+							<td>Dernier attestation de paiement</td>
+						</tr>
+					</table>
+					<table class="table table-striped">
+						<thead>
+							<th class="PAJ">Pour les autres demandeurs</th>
+							<th class="PAJ"></th>
+						</thead>
+						<tr>
+							<td>Pour tous</td>
+							<td>Un RIB ou RIP</td>
+						</tr>
+							<td>Français et ressortissant EEE</td>
+							<td>Carte d’identité, passeport pour le demandeur et son concubin</td>
+						</tr>
+						<tr>
+							<td>Autres nationalités</td>
+							<td>Titre de séjour et ceux des ayants droit</td>
+						</tr>
+						<tr>
+							<td>Réfugiés</td>
+							<td>Pièce officielle pour reconnaître ce statut</td>
+						</tr>
+						<tr>
+							<td>Enfant à charge</td>
+							<td>Livret de famille</td>
+						</tr>
+						<tr>
+							<td>Si le patient a moins de 25 ans et qu’il attend un enfant </td>
+							<td>Un certificat médical attestant de la grossesse</td>
+						</tr>
+					</table>
+					<button  class="btn btn-default" ng-click="reponse5=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse6=true"><em>6. Le FSL</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse6">
+					<p><b>Dossier à remplir avec une assistante sociale du CCAS avec: </b></p>
+					<ul>
+						<li>Pièces d’identité</li>
+						<li>Notification d’ouverture de droits Assedic ou pension d’invalidité ou rente</li>
+						<li>Contrat de travail et 3 derniers bulletins de salaire</li>
+					</ul>
+					<p><b>Et le cas échéant,</b> l’avis de paiement des allocati ons Assedic ou pension d’invalidité ou rente des 3 derniers mois</p>
+					<ul>
+						<li>Attestation de paiement en cours de la CAF</li>
+						<li>Avis d'imposition</li>
+						<li>Justificatif de crédit</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse6=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse7=true"><em>7. Handicap</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse7">
+					<p><b>Pour toute demande de prestations,</b> il faut être muni de:</p>
+					<ul>
+						<li>un certificat médical de moins de 3 mois</li>
+						<li>une photocopie de carte d’identité, passeport, livret de famille ou titre de séjour</li>
+						<li>un justificatif de domicile</li>
+						<li>une attestation de jugement de tutelle ou curatelle </li>
+					</ul>
+					<p><b>Pour l'AAH</b></p>
+					<ul>
+						<li>Déclaration de ressources et avis d’imposition de l’année antérieure</li>
+						<li>RIB ou RIP</li>
+					</ul>
+					<p><b>Pour la PCH</b></p>
+					<ul>
+						<li>Attestation d’emploi d’une tierce personne</li>
+						<li>Selon le cas du patient, attestation d’une pension d’invalidité de 3e catégorie ou d’une rente accident du travail avec majoration tierce personne</li>
+						<li>Avis d’imposition de l’année antérieure</li>
+						<li>RIB ou RIP</li>
+						<li>Photocopie du permis de conduire (pour l’aménagement du véhicule)</li>
+						<li>Devis d’aménagement du domicile, du véhicule ou de matériel</li>
+					</ul>
+					<p><b>Les étrangers en situation régulière et en séjour temporaire en France</b></p>
+					<ul>
+						<li>Passeport ou titre de séjour</li>
+						<li>La notification d’ouverture de droits pour les bénéficiaires de l’AME</li>
+						<li>Carte européenne d’assurance maladie CEA</li>
+						<li>Formulaire SE 352 pour les ressortissants d’Algérie</li>
+						<li>Formulaire de convention entre le pays d’origine et la France</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse7=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse8=true"><em>8. L’APA</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse8">
+					<p><b>Pièces nécessaires</b></p>
+					<ul>
+						<li>Justificatif d’identité (carte d’identité, passeport, extrait ou acte de naissance)</li>
+						<li>Carte de séjour ou de résidence pour les étrangers</li>
+						<li>Dernier avis d’imposition</li>
+						<li>Justificatif des taxes foncières s’il y a lieu</li>
+						<li>Un RIB ou RIP du futur bénéficiaire.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse8=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse9=true"><em>9. le SURENDETTEMENT</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse9">
+					<p><b>Documents à joindre</b></p>
+					<ul>
+						<li>Rassembler dans le dossier de surendettement toutes les photocopies des justificatifs:</li>
+						<li>d’identité,</li>
+						<li>de situation familiale,</li>
+						<li>de revenus, ressources, biens (immobiliers ou autres),</li>
+						<li>de charges et dettes.</li>
+						<li>Et le cas échéant, les nom, prénom, coordonnées du travailleur social qui suit le dossier du patient</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse9=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse10=true"><em>10. le CONGE DE PATERNITE</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse10">
+					<p><b>Formalités à eﬀectuer auprès de votre employeur</b></p>
+					<p>Informer l’employeur, par lettre simple, de la date et de la durée du congé paternité et ce un mois minimum avant la date choisie du début du congé paternité,</p>
+					<ul>
+						<li>L’employeur remplit l’attestation de salaire (formulaire n° S3201n) et l’adresse à la Caisse d’assurance maladie au moment de la reprise de votre travail.</li>
+					</ul>
+					<h4 class="savoir-PAJ" ><span class="glyphicon glyphicon-arrow-right savoir-arrow-PAJ" ></span> A savoir</h4>
+					<p class="italic">L’employeur ne peut pas refuser d’accorder le congé paternité à un salarié, mais il doit en être informé 1 mois à l’avance;</p>
+					<p class="italic">Le congé paternité ne peut être décalé qu’avec l’accord de l’employeur.</p>
+					<p><b>Formalités à effectuer auprès de la Caisse d’assurance maladie</b></p>
+					<p>Justifier de la filiation de l’enfant et adresser la Caisse d’assurance maladie:</p>
+					<ul>
+						<li>une copie de l’acte de naissance de l’enfant;</li>
+						<li>ou une copie du livret de famille mis à jour;</li>
+						<li>ou, le cas échéant, la copie de l’acte de reconnaissance de l’enfant.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse10=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-PAJ" ng-click="reponse11=true"><em>11. Aides Au Logement CAF </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse11">
+					<p><b>Présenter avec le dossier: </b></p>
+					<ul>
+						<li><b>un relevé d’identité bancaire, postal ou d’épargne.</b></li>
+						<li><b>une attestation de loyer complétée, datée et signée par le bailleur.</b></li>
+						<li>Si vous souhaitez que l’aide au logement soit versée directement à votre propriétaire (sauf s’il s’agit d’unlogement HLM ou conventionné APL), <b>faites-lui signer la demande de versement direct jointe après l’avoir complétée.</b></li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse11=false;">FERMER</button>
+				</div>
+			</div>
+		</div>

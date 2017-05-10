@@ -1,0 +1,323 @@
+
+<!DOCTYPE>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+    <!--Controllers-->
+    <script src="controllers/toggleCtrl.js"></script>
+    <script src="controllers/mainCtrl.js"></script>
+
+    <!--JS-->
+    <script src="app.js"></script>
+    <script src="app.routes.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <base href="/">
+    <title>Guide Social du Médecin</title>
+  </head>
+  <body ng-app="guideSocialApp" ng-controller="mainController as main">
+
+  <header>
+  <div id="wrapper">
+        <div class="overlay"></div>
+            <i class="zmdi zmdi-search zmdi-hc-2x icon-search" data-toggle="modal" style="margin-left: 90%;cursor: pointer;margin-top: 2rem;" data-target=".recherche"></i>
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                      Le Guide<b>Social</b> <em>du médecin</em>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="home"> <i class="fa fa-fw fa-home"></i>Accueil</a>
+                </li>
+                <li class="dropdown show-on-hover">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Protection sociale<span class="caret"></span></a>
+                  <ul class="dropdown-menu ">
+                  <li></li>
+                    <li><a ui-sref="secu">je n'ai plus de sécurité sociale</a></li>
+                    <li><a ui-sref="payer">je ne peux vraiment pas vous payer</a></li>
+                    <li><a ui-sref="facture">j'ai reçu la facture de l'hôpital</a></li>
+                    <li><a ui-sref="invalidite">on me propose de me mettre en invalidité</a></li>
+                    <li><a ui-sref="jeune">je suis jeune et je n'ai plus de couverture sociale</a></li>
+                    <li><a ui-sref="etranger">je suis étranger et je n'ai plus de couverture sociale</a></li>
+                    <li><a ui-sref="ame">je n'ai plus droit à l'aide médicale de l'état (AME)</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown show-on-hover">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Logement<span class="caret"></span></a>
+                  <ul class="dropdown-menu ">
+                    <li></li>
+                    <li><a ui-sref="expulsion">on veut m'expulser de mon appartement</a></li>
+                    <li><a ui-sref="sdf">je suis sans domicile fixe</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown show-on-hover">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Emploi<span class="caret"></span></a>
+                  <ul class="dropdown-menu ">
+                    <li></li>
+                    <li><a ui-sref="demission">je craque, je vais démissionner</a></li>
+                    <li><a ui-sref="viensdedemissionner">je viens de démissionner</a></li>
+                    <li><a ui-sref="licencie">je viens d'être licencié</a></li>
+                    <li><a ui-sref="malade-licencie">je suis en arrêt maladie et on veut me licencier</a></li>
+                    <li><a ui-sref="pas-de-travail">cela devient grave, je n'arrive pas à trouver un emploi</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown show-on-hover">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Ressources<span class="caret"></span></a>
+                  <ul class="dropdown-menu ">
+                    <li></li>
+                    <li><a ui-sref="touche-rien">je ne touche plus rien</a></li>
+                    <li><a ui-sref="allocations">je n'ai plus mes allocations</a></li>
+                    <li><a ui-sref="rsa">je n'ai plus de RSA</a></li>
+                    <li><a ui-sref="AAH">on me dit que je peux faire une demande d'AAH</a></li>
+                    <li><a ui-sref="fin-de-droits">je suis au chômage en fin de droit</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown show-on-hover">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Situations particulières<span class="caret"></span></a>
+                  <ul class="dropdown-menu ">
+                    <li></li>
+                    <li><a ui-sref="hospitalisation-patient">Vous préparez l'hospitalisation de votre patient</a></li>
+                    <li><a ui-sref="enfant-malade">mon enfant est malade et je travaille</a></li>
+                    <li><a ui-sref="etudiant">je suis étudiant, c'est la galère!</a></li>
+                    <li><a ui-sref="enfant-retire">on veut me retirer mes enfants</a></li>
+                    <li><a ui-sref="personne-vulnerable">Votre patient est une personne vulnérable</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown show-on-hover  ficheTechnique">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-file-text"></i>  Fiches techniques<span class="caret"></span></a>
+                  <ul class="dropdown-menu ficheTechnique">
+                    <li></li>
+                    <li><a ui-sref="droits-ss">Droit au régime général de la sécurité socials</a></li>
+                    <li><a ui-sref="couverture-sociale">Couverture Sociale</a></li>
+                    <li><a ui-sref="CS-chomeur">Couverture Sociale des chômeurs</a></li>
+                    <li><a ui-sref="RSA">Le RSA</a></li>
+                    <li><a ui-sref="CMU">La couverture maladie universelle (CMU)</a></li>
+                    <li><a ui-sref="ticket-moderateur">Cas d’exonération du ticket modérateur</a></li>
+                    <li><a ui-sref="complementaires-sante">Les complémentaires santé</a></li>
+                    <li><a ui-sref="protection-etrangers">Protection sociale des étrangers</a></li>
+                    <li><a ui-sref="etrangers-sejour-temporaire">Les étrangers en séjour temporaire en france</a></li>
+                    <li><a ui-sref="arret-maladie">Arrêt maladie</a></li>
+                    <li><a ui-sref="surendettement">Surendettement des familles et faillites familliales</a></li>
+                    <li><a ui-sref="assurance-invalidite">Assurance invalidité</a></li>
+                    <li><a ui-sref="assurance-maternite">Assurance maternité</a></li>
+                    <li><a ui-sref="accident-travail">Accident de travail</a></li>
+                    <li><a ui-sref="maladies-professionnelles">Les maladies professionnelles</a></li>
+                    <li><a ui-sref="inaptitude">Inaptitude au travail</a></li>
+                    <li><a ui-sref="etudiants-ft">Etudiants</a></li>
+                    <li><a ui-sref="detenus">Détenus et sortant de prison</a></li>
+                    <li><a ui-sref="handicap">Handicap et prestations</a></li>
+                    <li><a ui-sref="aide-logement">Aide au logement</a></li>
+                    <li><a ui-sref="mediation-familiale">Médiation familiale</a></li>
+                    <li><a ui-sref="aides-jeunes">Aides aux jeunes</a></li>
+                    <li><a ui-sref="demissions-legitimes">Cas de démissions legitimes</a></li>
+                    <li><a ui-sref="conges-particuliers">Congés particuliers</a></li>
+                    <li><a ui-sref="assurance-chomage">Assurance chômage</a></li>
+                    <li><a ui-sref="aide-juridictionnelle">Aide juridictionnelle</a></li>
+                    <li><a ui-sref="procedure-licenciement">Procèdure de licenciement</a></li>
+                    <li><a ui-sref="licenciement-personnel">Licenciement pour motif personnel</a></li>
+                    <li><a ui-sref="conseil-prudhommes">Conseil des prud’hommes</a></li>
+                    <li><a ui-sref="expulsion-prevention-procedure">L’expulsion du logement: prévention et procédure</a></li>
+                    <li><a ui-sref="huissiers">Huissiers</a></li>
+                    <li><a ui-sref="apa">L’allocation personnalisée d’autonomie (APA), majoration tierce personne (MTP) et prestation de compensation du handicap (PCH)</a></li>
+                    <li><a ui-sref="longue-maladie">Longue maladie - ALD 30</a></li>
+                    <li><a ui-sref="docs-hospitalisation">Documents nécessaires en vue d’une hospitalisation</a></li>
+                    <li><a ui-sref="protection-mineurs">Protection des mineurs</a></li>
+                    <li><a ui-sref="protection-majeurs">Protection des majeurs vulnérables</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown show-on-hover documents">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-download"></i> Documents<span class="caret"></span></a>
+                  <ul class="dropdown-menu documents ">
+                    <li></li>
+                    <li><a ui-sref="104">Bilan</a></li>
+                    <li><a ui-sref="105">ASSS</a></li>
+                    <li><a ui-sref="106">accompagnement-social</a></li>
+                    <li><a ui-sref="107">PASS</a></li>
+                    <li><a ui-sref="108">CPAM</a></li>
+                    <li><a ui-sref="109">Menace-expulsion</a></li>
+                    <li><a ui-sref="110">Pole emploi</a></li>
+                    <li><a ui-sref="111">Médecin du travail</a></li>
+                    <li><a ui-sref="112">Guichet de la préfecture</a></li>
+                    <li><a ui-sref="113">A l'attention du médecin de l'ARS</a></li>
+                    <li><a ui-sref="114">Préfecture</a></li>
+                    <li><a ui-sref="115">Refus</a></li>
+                    <li><a ui-sref="116">Contentieux</a></li>
+                    <li><a ui-sref="pieces-a-joindre">Pièces à joindre</a></li>
+                  </ul>
+                </li>
+           
+                <li class="lexique"><a ui-sref="carnet-adresses"><span class="glyphicon glyphicon-book"></span> Carnet d'adresses</a></li>
+                <li class="lexique"><a ui-sref="lexique"><span class="glyphicon glyphicon-book"></span> Lexique</a></li>
+              </ul>
+             <!--  <ul class="nav navbar-nav navbar-right">
+                <li class="log" ng-if="!main.loggedIn "><a ui-sref="login">Login</a></li>
+                <p ng-if="main.loggedIn" style="color:#5fcf80;" class="navbar-text ">Bonjour {{ main.user.data.username }}!</p>
+               <button  ng-if="main.loggedIn"  type="button" class="btn btn-default navbar-btn btn-log" ><a id="log" href="#" ng-click="main.doLogout()">Logout</a></button>
+              </ul> -->
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+          </button>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+               <div class="row">
+                <div class="view" ui-view >
+                  <div class="row">
+                    <div class="col-sm-12 titre-reponse">
+                      <div>
+                        <p style="text-align: center;margin-bottom: 4rem;font-size: 25px;padding: 2rem;background-color: #1a1a1a;color: white;">Bienvenue sur le Guide<b>Social</b> <em>du médecin</em></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 titre-reponse">
+                      <div class="wrapper-accueil" >
+                        <p class="menu-accueil" style="background-color:#FF193D; "><a ui-sref="menu-fs">Fiches de situation</a> </p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 titre-reponse">
+                      <div class="wrapper-accueil" >
+                        <p class="menu-accueil" style="background-color:#1CA268;""><a ui-sref="menu-ft">Fiches techniques</a></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 titre-reponse">
+                      <div class="wrapper-accueil" >
+                        <p class="menu-accueil" style="background-color: sandybrown;"><a ui-sref="lexique">Lexique</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-4 titre-reponse">
+                      <div class="wrapper-accueil" >
+                        <p class="menu-accueil" style="background-color:#ab499b; "><a ui-sref="menu-lt">Lettres type</a> </p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 titre-reponse">
+                      <div class="wrapper-accueil" >
+                        <p class="menu-accueil" style="background-color:#7b97d1; "><a ui-sref="pieces-a-joindre">Pièces à joindre</a></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 titre-reponse">
+                      <div class="wrapper-accueil" >
+                        <p class="menu-accueil" style="background-color:orangered; "><a ui-sref="carnet-adresses">Carnet d'adresses</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 titre-reponse">
+                      <div class="wrapper-accueil" >
+                        <p class="menu-accueil" style="background-color:#0363ad ;"><a target="_blank" href="http://annuairesante.ameli.fr/">Annuaire santé</a> </p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 titre-reponse">
+                      <div class="wrapper-accueil" >
+                        <p class="menu-accueil" style="background-color:#3e306b "><a target="_blank" href="http://www.ameli.fr/simulateur-droits">Simulateur de droits</a></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 titre-reponse">
+                      <div class="wrapper-accueil" >
+                        <p class="menu-accueil" style="background-color:#e24e5e; "><a target="_blank" href="http://www.ameli.fr/simulateur">Simulateur indemnités </a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       <!--  <div class=" footer"></div> -->
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+  
+    <script type="text/javascript">
+      $(document).ready(function () {
+      var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+      isClosed = false;
+
+      trigger.click(function () {
+       hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+      $('[data-toggle="offcanvas"]').click(function () {
+            $('#wrapper').toggleClass('toggled');
+      });  
+    });
+    </script>
+
+    <!--Gobal search -->
+          <div  class="modal  fade recherche" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg1" role="document">
+              <div class="modal-content wrapper-fiche ">
+                  <div class="modal-body">
+                    <form>
+                        <label>Recherche</label>
+                        <input ng-model="global.search" type="text" class="form-control" />
+                        <p ng-if="global.search" ng-repeat="template in templates | filter: global.search"><a data-dismiss="modal" ui-sref="{{template.name}}">{{template.titre}}</a></p>
+                    </form>
+                </div>  
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  </body>
+</html>

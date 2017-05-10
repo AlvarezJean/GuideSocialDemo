@@ -1,0 +1,144 @@
+
+		<div class="row">
+		  <div class="col-sm-12 titre"> Docteur, je suis sans domicile fixe</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 citation">
+			  	<p><em><blockquote>"Certaines situations correspondent à des moments de crise, mais d’autres durent depuis des mois ou des années. Il est important aussi de savoir à qui l’on a affaire: homme seul, jeune, femme seule, femme avec enfants, mineur?"</blockquote></em>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Situation de rupture récente</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p><b>L'orienter vers</b></p>
+					<ul>
+						<li>un centre d’hébergement collectif,</li>
+						<li>une association d’accueil pour SDF,</li>
+						<li>un CCAS/BAS,</li>
+						<li>le SAMU social, s’il en existe en ville.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>SDF depuis quelques mois</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p>Il n’a probablement pas sollicité l’ensemble des services.</p>
+					<p>Il faut l’orienter vers les associations qui existent dans la ville (Secours catholique, Emmaüs, etc.).</p>
+					<p>Il se peut aussi que les services sociaux de la mairie disposent d’un accueil destiné aux SDF et que vous puissiez l’y orienter.</p>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse3=true"><em>SDF depuis plusieurs années</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<p>A priori, il connaît les centres d’hébergement et les circuits habituels, mais il peut être en situation de rupture d’hébergement (pas de place, arrivé trop tardivement ou exclu pour des raisons de non-respect du règlement).</p>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse4=true"><em>Réponses à donner</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse4">
+					<p>Dans certaines villes, il existe un numéro vert du SAMU social: 115 et depuis 2011 un nouveau service, le SIAO Urgence ou Insertion (service d’intégration, d’accueil et d’orientat on) accessibles aux seuls professionnels du social et dont la fiche d’orientation est nécessaire pour trouver une place.</p>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Votre patient peut appeler et les équipes viendront le chercher pour l’amener dans un centre d’hébergement.
+						</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Vous pouvez contacter un centre d’hébergement par téléphone si c’est encore possible en direct et/ou faire une lettre d’accompagnement<br><button ui-sref="carnet-adresses" class="btn  btn-CA">Carnet d'adresses</button> ou faire une lettre d’accompagnement à l’AS. <button ui-sref="106" class="btn btn-default btn-LT">Lettre type</button></li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse4=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">Jeune</h3>
+		  </div>
+		</div>
+		<div class="row"> 
+		  <div class="col-sm-12 ">
+		  	<p class="titre-question"><em>Il est important que vous connaissiez l’âge de ce jeune.</em></p>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse5=true"><em>Moins de 18 ans: Il est mineur, que faire?</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse5">
+					<p><b>S’il est d’accord:</b></p>
+					<ul>
+						<li>contacter la brigade des mineurs,</li>
+						<li>une associati on d’accueil pour mineurs</li>
+						<li>sa famille,</li>
+						<li>une AS,</li>
+						<li>appeler SOS Enfance maltraitée au 119,</li>
+						<li>lieu d’écoute Jeune Fil Santé Jeune <a href="tel:0800-235-236"> 0800 235 236</a>, anonyme et gratuit.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse5=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse6=true"><em>Moins de 21 ans</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse6">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Il est possible qu’il soit considéré comme jeune majeur. Dans ce cas, il faudrait le réorienter vers les services qui le suivent (ASE, AEMO, etc.)
+						</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’il n’est pas reconnu: l’orienter vers l’AS de l’ASE.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse6=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse7=true"><em>Plus de 21 ans</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse7">
+					<ul>
+						<li>Mission locale ou PAIO.</li>
+						<li>Association point écoute jeune.</li>
+						<li>CHRS.</li>
+						<li>CCAS.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse7=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse8=true"><em>S'il est étudiant</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse8">
+				<p>Il lui faut contacter le service social du CROUS <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('etudiants-ft');">Voir Etudiants</button></p>
+					<button  class="btn btn-default" ng-click="reponse8=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse9=true"><em>S’il est arrivé clandestinement sur le territoire français</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse9">
+					<p>Il peut être accueilli par des associations spécialisées: <button ui-sref="carnet-adresses" class="btn btn-default btn-CA">Carnet d'adresses</button></p>
+					<button  class="btn btn-default" ng-click="reponse9=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+
+<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

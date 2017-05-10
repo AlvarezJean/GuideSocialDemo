@@ -1,0 +1,85 @@
+		<div class="row">
+		  <div class="col-sm-12 titre"> Docteur, je ne touche plus rien <i class="zmdi zmdi-compass icon-savoir" data-toggle="modal" style="margin-left: 35%;" data-target=".savoir-modal-lg8"  style="color: white;cursor: pointer;"></i></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 citation">
+			  	<p><em><blockquote>"Pour mieux orienter votre patient vers un service, il est important de faire un bilan de sa situation sociale et de le diriger vers une AS avec un mot de votre part.<button ui-sref="106" class="btn btn-default btn-LT">Lettre type</button>" </blockquote></em>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">QUELQUES ÉLÉMENTS DE BILAN DE SITUATION SOCIALE </h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Est-ce lié au changement de sa situation?</em></h6>
+					<div class="wrapper-reponse" ng-show="reponse1" >
+						<ul>
+							<li>Rupture conjugale: voir avec l’AS de la CAF.</li>
+							<li>Démission: voir avec le PÔLE EMPLOI.</li>
+							<li>Si malade: indemnités journalières. Contacter la caisse de SS. </li>
+							<li>En attente de prestation RSA: contacter l’AS du CCAS, du Conseil général.</li>
+							<li>AAH: peut bénéficier du RSA en att endant.</li>
+							<li>Pension retraite: une pension de vieillesse si plus de 60 ans, sinon RSA.</li>
+						</ul>
+						<p>Conseiller à votre patient de se renseigner auprès des caisses de retraite ou de mutuelle s’il peut avoir une aide en attendant.</p>
+						<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>Vérifier la dégradation sociale</em></h6>
+					<div class="wrapper-reponse" ng-show="reponse2" >
+						<ul>
+							<li>Dettes de loyer: FSL.<br> <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('aide-logement');">Voir Aide au logement</button><button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('expulsion-prevention-procedure');">Voir L'expulsion du logement : Prévention et procédure</button><button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('apa');">Voir Surrendettement des familles et faillites familiales</button> </li>
+							<li>Dettes de banque: une lettre + AS.<br> <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('apa');">Voir Surrendettement des familles et faillites familiales</button></li>
+							<li>S’il a des crédits, il doit vérifier s’il a pris une assurance chômage. Dans ce cas, celle-ci prend le relais pour les remboursements.  </li>
+							<li>Les huissiers.<br> <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('huissiers');">Voir Huissiers</button><button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('aide-logement');">Voir Aide au logement</button> <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('expulsion-prevention-procedure');">Voir L'expulsion du logement : Prévention et procédure</button><button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('apa');">Voir Surrendettement des familles et faillites familiales</button> </li>
+							<li>Sous-alimentation: mairie + CCAS+ AS du Conseil général + associations</li>
+							<li>Surendettement: AS + commission de surendettement.<br><button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('apa');">Voir Surrendettement des familles et faillites familiales</button></li>
+							<li>Couverture sociale. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('couverture-sociale');">Voir Couverture sociale</button> <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CMU');">Voir CMU</button></li>
+						</ul>
+						<p>Conseiller à votre patient de se renseigner auprès des caisses de retraite ou de mutuelle s’il peut avoir une aide en attendant.</p>
+						<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+					</div>
+			</div>
+		</div>
+
+<div class="modal  fade savoir-modal-lg8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg8" role="document">
+	    <div class="modal-content wrapper-fiche ">
+		    <div class="modal-body">
+				<h3 class="titre-conduite" ><span style="color: orangered;font-size: 30px;" class="glyphicon glyphicon-triangle-right"></span>Conduite à tenir</h3>
+				<p><b>Indiquer les aides d’urgence:</b></p>
+				<ul>
+					<li>Bons et colis alimentaires du CCAS et/ou du Conseil général.</li>
+					<li>ASE - Voir l’AS du Conseil général.</li>
+					<li>SS, CAF, mutuelles.</li>
+					<li>Fonds sociaux des associations, etc.</li>
+					<li>Le diriger vers une AS qui, après étude de sa situation, mettra en place l’ensemble des prestations auxquelles il peut prétendre.</li>
+				</ul>
+				<p>AS: assistante sociale, RSA: Revenu de Solidarité Active, CAF: Caisse d’allocations familiales, AAH: allocation adulte handicapé, CCAS: Centre communal d’action sociale, FSL: Fonds de Solidarité au Logement, SS: Sécurité Sociale, ASE: Aide Sociale à l’Enfance</p>
+			</div>	
+		    <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+		    </div>
+	    </div>
+	</div>
+</div>
+	
+
+	<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+		<div class="row">
+		  <div class="col-sm-12 titre">Vous voulez préparer l’hospitalisation de votre patient</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">PROBLÈME DE GARDE DE L’ENFANT </h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Si l’enfant est atteint d’une infection passagère</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p> Le Code du travail prévoit que la famille a droit à un congé spécifique non rémunéré.</p>
+					<p><b>Comment l’obtenir?</b><br>Maladie ou accident constatés par certificat médical. </p>
+					<p><b>Qui y a droit?</b><br>Tout salarié ayant en charge un enfant de moins de 16 ans. </p>
+					<p><b>Duréee possible?</b></p>
+					<ul>
+						<li>3 jours par an (variable selon conventi on collective).</li>
+						<li>5 jours si l’enfant concerné est âgé de moins d’un an, si le salarié a la charge d’au moins 3 enfants âgés de moins de 16 ans.</li>
+					</ul>
+					<div class="row">
+						<div class="col-sm-12 ">
+						  	<p class="attention"><i style="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span>Il faut adresser à l’employeur le certificat médical de l’enfant.
+						  	</p>
+						</div>
+					</div>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>Si la maladie de l’enfant peut durer longtemps</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p>Le droit du travail prévoit que le salarié dispose d’un «compte crédits» de 310 jours ouvrés (14 mois) sur 3 ans maximum qu’il utilise en fonction de ses besoins, à temps plein ou à temps partiel.</p>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse3=true"><em>Le salarié doit envoyer à son employeur</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> une lettre recommandée avec accusé de réception (ou remise en main propre contre décharge), au moins 15 jours avant le début du congé, l’informant de sa volonté de bénéficier du congé parental,  </li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>le certificat médical détaillé établi par le médecin qui suit l’enfant malade, précisant ou attestant de:
+							<ul>
+								<li>la gravité de la maladie, du handicap ou de l’accident,</li>
+								<li>la nécessité d’une présence soutenue auprès de l’enfant et de soins contraignants,</li>
+								<li>la durée prévisible de traitement.</li>
+							</ul>
+						</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse4=true"><em>Les ressources</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse4">
+					<p>La rémunérati on n’est pas maintenue pendant le congé de présence parentale. Dans certaines conditi ons et limites, il est possible de bénéfi cier d’une «allocation journalière de présence parentale» (AJPP) en se renseignant auprès de la CAF. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('protection-mineurs');">Voir Protection des mineurs</button></p>
+					<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+					<p>Parfois, les assurances ou mutuelles versent des prestati ons supplémentaires pour payer les gardes d’enfants ou aides ménagères en cas de maladie. Vérifi er le contrat d’assurance.</p>
+					<p>Il existe par ailleurs d’autres congés auxquels votre patient a peut-être droit. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('conges-particuliers');">Voir Congés particuliers</button></p>
+					<button  class="btn btn-default" ng-click="reponse4=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse5=true"><em>Dans tous les cas</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse5">
+					<ul>
+						<li>Diriger votre patient vers l’AS du secteur ou de la CAF.</li>
+						<li>Il a peut-être droit à la présence d’une travailleuse familiale.</li>
+						<li>Une association de bénévoles peut l’aider à organiser la garde de l’enfant.</li>
+						<li>Un réseau de famille ou de voisins peut réfléchir avec lui à de nouvelles solutions.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse5=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

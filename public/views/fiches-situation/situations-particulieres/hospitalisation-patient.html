@@ -1,0 +1,112 @@
+		<div class="row">
+		  <div class="col-sm-12 titre">Vous voulez préparer l’hospitalisation de votre patient<i class="zmdi zmdi-compass icon-savoir" data-toggle="modal" style="margin-left: 35%;" data-target=".savoir-modal-lg9"  style="color: white;cursor: pointer;"></i></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 citation">
+			  	<p><em><blockquote>"Afin d’éviter au patient de faire face à une situation fragilisante, comme par exemple des factures non payées, il est préférable que son dossier administratif soit préparé avec lui avant l’hospitalisation et, si c’est un cas urgent, avec sa famille pendant l’hospitalisation."
+				</blockquote></em>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">QUELS SONT LES DOCUMENTS NÉCESSAIRES À L’HOSPITALISATION?</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse">
+					<p><span  class="glyphicon glyphicon-triangle-right "></span>La carte Vitale et l’attestation de droits valides.</p>
+					<p>Si sa carte est périmée (mise à jour possible dans les bornes).</p>
+					<p>S’il n’a pas de carte, vérifier qu’il a des droits ouverts. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('couverture-sociale');">Voir Couverture sociale</button></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Si les droits sont ouverts</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p> il doit réactualiser sa situation auprès de la CPAM ou apporter à l’hôpital les documents. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('docs-hospitalisation');">Voir Documents nécessaires en vue d'une hospitalisation</button></p>
+					<ul>
+						<li>Ou la notification d’ouverture de droit pour les bénéficiaires de l’AME ou de la CMU.</li>
+						<li>La carte d’assurance complémentaire ou de mutuelle.</li>
+						<li>La prescription médicale</li>
+						<li>Carte d’identité, passeport ou livret de famille ou ti tre de séjour.</li>
+						<li>Les justificatifs de domicile: quittance EDF, impôts locaux ou une simple déclaration sur l’honneur.</li>
+						<li>Si votre patient est étranger: <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('docs-hospitalisation');">Voir Documents nécessaires en vue d'une hospitalisation</button></li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">S’IL NE DISPOSE PAS DE COUVERTURE SOCIALE</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>Si le patient n’a pas de couverture sociale</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p> Envoyer le patient au centre de SS avec un courrier pour ouvrir des droits (CMU, AME). Lettre type p.105</p>
+					<p>S’il n’y a pas de possibilité de couverture sociale: diriger le patient vers la PASS de l’hôpital s’il en existe une ou, à défaut, aux urgences avec une lettre de votre part. <button ui-sref="107" class="btn btn-default btn-LT">Lettre type</button></p>
+					<p>Si la situation est urgente, envoyer votre patient aux urgences avec une lettre explicative pour que le médecin puisse contacter le service social de l’hôpital ou la PASS. <button ui-sref="106" class="btn btn-default btn-LT">Lettre type</button></p>
+					<div class="col-sm-12 wrapper-savoir">
+						<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+						<p class="italic">le patient peut être considéré comme ayant droit. L’envoyer à la CPAM du domicile pour vérifier. </p>
+					</div>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">S’IL NE DISPOSE PAS D’UNE MUTUELLE OU D’ASSURANCE COMPLÉMENTAIRE </h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse">
+					<p>Les complémentaires santé sont indispensables en cas d’hospitalisati on. </p>
+					<p>Une mutuelle peut dispenser le patient de l’avance des frais et elle prend en charge le ticket modérateur et le forfait journalier.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('complementaires-sante');">Voir Les complémentaires santé</button></p>
+					<p>A défaut, il peut demander la CMUC ou une aide à la mutuelle. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CMU');">Voir CMU</button> </p>
+					<div class="row">
+						<div class="col-sm-12 ">
+						  	<p class="attention"><i style="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span>  certaines complémentaires santé n’ont pas passé de convention avec l’hôpital. L’hôpital peut demander l’avance des frais. Conseiller au patient de contacter sa mutuelle pour obtenir une dérogation
+						  	</p>
+						</div>
+					</div>
+						<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+						<p class="italic"> de plus en plus de travailleurs «pauvres» n’ont pas de mutuelle. Il faut leur expliquer qu’en cas de maladie grave, les factures peuvent être très élevées. </p>
+				</div>
+			</div>
+		</div>
+
+<div class="modal  fade savoir-modal-lg9" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg9" role="document">
+	    <div class="modal-content wrapper-fiche ">
+		    <div class="modal-body">
+		    	<h3 class="titre-conduite" ><span style="color: orangered;font-size: 30px;" class="glyphicon glyphicon-triangle-right"></span>Conduite à tenir</h3>
+				<p>Vérifier ou faire vérifier que votre patient possède toutes les pièces justificatives pour l’ouverture de son dossier avant son hospitalisation. </p>
+				<p>Conseiller fortement au patient (ou à un membre de sa famille) de voir l’AS de l’hôpital avant ou pendant son hospitalisation.</p>
+			</div>	
+	    <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	    </div>
+	    </div>
+	</div>
+</div>
+	
+
+	<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

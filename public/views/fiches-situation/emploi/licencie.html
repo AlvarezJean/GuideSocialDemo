@@ -1,0 +1,71 @@
+	<div class="row">
+		  <div class="col-sm-12 titre"> Docteur, je viens d'être licencié</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 citation">
+		  	<p><em><blockquote>"C’est une situation malheureusement courante et qui peut avoir d’importantes répercussions sur la situation familiale du patient. Vous devez attirer son attention sur les conséquences que cela entraîne et le préparer à cette nouvelle situation en faisant un bon diagnostic social." </blockquote></em>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">QUE FAIRE?</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Lui faire connaître ses droits face à un licenciement</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p>Il doit prendre contact avec l’inspection du travail, une maison de justice ou un syndicat pour vérifier la conformité des documents et procédures pour, éventuellement des démarches aux prud’hommes <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('procedure-licenciement');" >Voir Procedure de licenciement</button><br></p>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>L’inciter à faire les démarches nécessaires</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<ul class="liste-reponse"> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span>Il faut s’inscrire au PÔLE EMPLOI pour bénéficier de droits (indemnisation, accompagnement, etc.).<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('assurance-chomage');" >Voir assurance chômage</button><br></li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span>S’adresser à sa caisse de SS pour effectuer le changement de situation.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CS-chomeur');" >Voir couverture sociale des chômeurs</button><br></li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span>Vérifier s’il y a un maintien de couverture par sa mutuelle.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('complementaires-sante');" >Voir complémentaire santé</button><br></li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse3=true"><em>L’avertir qu’il doit faire face à une situation financière qui peut se dégrader</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<ul>
+						<li>Il ne sera pas indemnisé pendant une certaine période (délai de carence), </li>
+						<li>Prévenir la CAF car toute modification de situation peut lui donner droit à de nouvelles prestations.
+						<br>Qu’il envisage, le cas échéant, de prendre contact avec une AS pour évaluer tous les problèmes et possibilités liés à sa nouvelle situation (droit aux allocations logement et autres aides). <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('aide-logement');">Voir aide au logement</button><br> </li>
+						<li>Penser à prévenir par lettre recommandée de son changement de situation les organismes de crédits (banque, propriétaire, etc.).</li>
+						<li>S’il a des crédits, il doit vérifier s’il a pris une assurance chômage. Dans ce cas, celle-ci prend le relais pour les remboursements.<br> Sinon  <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('surendettement');" >Voir Surendettement des familles et faillites familiale</button><br></li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-12 wrapper-savoir">
+				<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+				<p>Si vous jugez que l’état de votre patient nécessite un arrêt maladie après son inscription au chômage, sachez que s’il a ouvert des droits aux indemnités journalières,<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('arret-maladie');" >Voir Arrêt maladie</button> celles-ci seront calculées sur la base de ses derniers salaires.</p>
+			</div>
+		</div>
+		
+	<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

@@ -1,0 +1,161 @@
+		<div class="row">
+		  	<div class="col-sm-12 titre-FT">Étudiants</div>
+		</div>
+		<div class="row">
+		 	<div class="col-sm-12 citation">
+		  		<p><em><blockquote>"Il existe un régime spécifique de SS pour les étudiants. Mais, sous certaines conditions, l’étudiant peut prétendre au régime général."</blockquote></em>
+				</p>
+		  	</div>
+		</div>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">COUVERTURE SOCIALE DES ÉTUDIANTS </h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse">
+					<p>L’affiliation de l’étudiant dépend de l’établissement qu’il fréquente</p>
+				</div>
+				<h6 class="titre-reponse-FT" ng-click="reponse1=true"><em>Le régime étudiant de Sécurité sociale</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p><b>Règle générale: </b>Règle générale: l’affiliation au régime étudiant est obligatoire dès 16 ans</p>
+					<ul>
+						<li>gratuite pour les boursiers quel que soit leur âge.</li>
+						<li>gratuite de 16 à 20 ans</li>
+						<li>payante de 20 à 28 ans (213 € en 2014-2015)</li>
+						<li>à 28 ans, même s’il arrête ses études, il y a maintien des droits pendant 4 ans en l’absence d’autre couverture sociale</li>
+					</ul>
+					<p>Sont concernés aussi par ce régime, les étudiants en stage obligatoire non rémunéré (inférieur ou égal à 30% du SMIC). </p>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse2=true"><em>Le régime général de Sécurité sociale</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span> Si le patient est en contrat<b>en alternance, en contrat de professionnalisation,</b> il est affilié au régime général de SS par son employeur. Il n’a pas la SS étudiante. </li> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span><b> S’il étudie dans un établissement non agréé par l’État.</b> Voir s’il a d’autres possibilités d’affiliation (ayant droit: <button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="couverture-sociale">Voir Couverture sociale</button>)</li>
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span>S’il a un contrat de travail (minimum 60 h/mois) pour l’année universitaire en cours (1er octobre au 30 septembre). Il doit se présenter, le jour de son inscription, avec son contrat de travail.</li> 
+					</ul>
+					<h4 class="savoir-FT" ><span class="glyphicon glyphicon-arrow-right savoir-arrow-FT" ></span> A savoir</h4>
+					<p class="italic">l’étudiant au régime général de SS des salariés a peut-être ouvert des droits aux IJ, à l’invalidité… Il touchera donc des indemnités basées sur ses derniers salaires en cas de maladie/maternité. Vérifier les droits à la SS.</p>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse3=true"><em>Cas fréquents</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span> Si l’étudiant perd son emploi au cours de l’année universitaire, il doit expliquer sa nouvelle situati on auprès de sa caisse de SS (CPAM) et s’assurer qu’il est bien couvert jusqu’à la fin de l’année universitaire (demander une attestation actualisée). Sinon, il doit s’acquitter de la SS étudiante. </li> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span><b> Si le jeune reprend des études mais a travaillé suffisamment pour ouvrir des droits, il doit demander à sa caisse de SS si ses droits au régime général couvrent la totalité de l’année universitaire (demander une att estati on actualisée). Sinon, il doit s’acquitter de la SS étudiante.</li>
+					</ul>
+					<div class="row">
+						<div class="col-sm-12 ">
+							<p class="attention"><i style="color: #1CA25F;" class="zmdi zmdi-alert-polygon"></i> <span style="color: #1CA25F; font-weight:bold;">ATTENTION:</span>Si l’université refuse les attestations d’affiliation au régime général et oblige le patient à payer sa SS étudiante, ce dernier pourra, en dernier lieu, demander à ce qu’on la lui rembourse à la fin de l’année universitaire.<br> Comment faire? Contacter l’URSSAF avec les attestations de SS étudiante et celles de la SS du régime des salariés.
+							</p>
+						</div>
+					</div>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse4=true"><em>Cas Particuliers</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse4">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span> Si l’étudiant est en stage obligatoire rémunéré (plus de 30 % du SMIC), en stage non obligatoire rémunéré (plus de 25 % du SMIC), alors il est au régime général des salariés pendant son stage. En général, le stage ne couvrant pas la totalité de l’année universitaire, il devra payer la SS étudiante mais il aura peut-être ouvert des droits au régime général et en bénéficiera lorsqu’il n’aura plus le statut étudiant.</li> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span> S’il est en stage non rémunéré (inférieur ou égal à 25 % du SMIC), alors il doit prendre une assurance personnelle. Renseignement à l’URSSAF.</li>
+					</ul>
+					<div class="row">
+						<div class="col-sm-12 ">
+							<p class="attention"><i style="color: #1CA25F;" class="zmdi zmdi-alert-polygon"></i> <span style="color: #1CA25F; font-weight:bold;">ATTENTION:</span>Si l’université refuse les attestations d’affiliation au régime général et oblige le patient à payer sa SS étudiante, ce dernier pourra, en dernier lieu, demander à ce qu’on la lui rembourse à la fin de l’année universitaire.<br> Comment faire? Contacter l’URSSAF avec les attestations de SS étudiante et celles de la SS du régime des salariés.
+							</p>
+						</div>
+					</div>
+					<button  class="btn btn-default" ng-click="reponse4=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">LES MUTUELLES ÉTUDIANTES </h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse">
+					<p>L’adhésion à une mutuelle permet de compléter les prestations servies par la SS et couvre les risques d’accident du travail et la responsabilité civile. Beaucoup d’étudiants ne savent pas qu’ils peuvent bénéficier de la CMUC. </p>
+				</div>
+				<h6 class="titre-reponse-FT" ng-click="reponse5=true"><em>Trois possibilités:</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse5">
+					<ul>
+						<li>choisir entre 2 deux mutuelles étudiantes: <button ui-sref="carnet-adresses" class="btn btn-default btn-CA">Carnet d'adresses</button> </li>
+						<li>souscrire une assurance privée.</li>
+						<li>demander la CMU complémentaire: les étudiants qui ne sont plus déclarés sur la fi che d’imposition de leurs parents peuvent bénéficier de la CMUC ou de l’aide à la mutuelle de la CPAM si les conditi ons de ressources sont respectées. S’ils avaient pris une mutuelle étudiante, ils peuvent se faire rembourser en apportant le justificatif d’attribution. <button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="CMU">Voir CMU</button> </li>
+					</ul>
+					<p>Sont concernés aussi par ce régime, les étudiants en stage obligatoire non rémunéré (inférieur ou égal à 30% du SMIC). </p>
+					<button  class="btn btn-default" ng-click="reponse5=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">SANTÉ À L’UNIVERSITÉ</h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse">
+					<p><b>Médecine préventive universitaire:</b> le SUMPPS (Service universitaire de médecine préventive et de promotion de la santé) propose des contrôles médicaux gratuits. Possibilités de soutien psychologique, de consultation de spécialistes… </p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">AIDES SOCIALES</h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse6=true"><em>Les CROUS (Centre Régional des Œuvres Universitaires et Scolaires)</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse6">
+					<p>Les CROUS sont les services sociaux des étudiants en établissements agrées par l’État (Université, BTS) <a target="_blank" href="http://www.cnous.fr">www.cnous.fr</a> </p>
+					<p>Contacter le service social du CROUS de l’académie pour remplir les dossiers de:</p>
+					<ul>
+						<li>Logement universitaire. </li>
+						<li>Bourse sur critères sociaux. </li>
+						<li>Bourse sur critères universitaires.</li>
+						<li>Allocation d’étude: pour ceux ne remplissant pas les conditions d’attribution d’une bourse.</li>
+						<li>Fonds de solidarité universitaire FSU: aide sous forme de prêt ou de don.</li>
+						<li>Prêt d’honneur…</li>
+					</ul>
+					<div class="row">
+						<div class="col-sm-12 ">
+							<p class="attention"><i style="color: #1CA25F;" class="zmdi zmdi-alert-polygon"></i> <span style="color: #1CA25F; font-weight:bold;"> ATTENTION:</span> dans la plupart des cas, ces dossiers sont à remettre entre le 15 janvier et le 30 avril de l’année précédant la rentrée universitaire.</p>
+						</div>
+					</div>
+					<button  class="btn btn-default" ng-click="reponse6=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse7=true"><em>Allocations logement</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse7">
+					<ul>
+						<li>Les étudiants ont droit très souvent à l’ALS ou l’APL. La demande peut être effectueé directement en ligne sur le site de la CAF. Le versement de l’allocation sera effectuée à partir du 1er mois suivant le mois de la demande. Les étudiants peuvent bénéficier aussi, s’ils sont boursiers, de prêts Loca Pass et d’une garantie de paiement pendant 18 mois. Cette garantie peut aussi concerner les étudiant non boursiers, sous conditions. C’est le dispositif CLE.<br>Pour en faire la demande, consulter le site locaviz.</li>
+						<li>Ils peuvent, très exceptionnellement, percevoir le RSA dérogatoire voir  <button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="RSA">Voir RSA</button> </li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse7=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+
+
+

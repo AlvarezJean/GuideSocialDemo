@@ -1,0 +1,288 @@
+		<div class="row">
+		  	<div class="col-sm-12 titre-FT"> L’allocation personnalisée d’autonomie (APA), majoration tierce personne (MTP) et prestation de compensation du handicap (PCH)</div>
+		</div>
+		<div class="row">
+		 	<div class="col-sm-12 citation">
+		  		<p><em><blockquote>"Ces trois aides ne sont pas cumulables entre elles. Elles permettent de payer les aides à domicile." </blockquote></em>
+				</p>
+		  	</div>
+		</div>
+		<h4 class="savoir-FT" ><span class="glyphicon glyphicon-arrow-right savoir-arrow-FT" ></span> A SAVOIR</h4>
+		<p class="italic">en payant avec le CESU, le patient bénéficie d’avantages fiscaux. <button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="cesu">Voir CESU</button> </p>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">PRESTATION DE COMPENSATION DU HANDICAP (PCH) </h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse" >
+					<p>Elle est accordée au titre d’une aide à domicile ou en établissement.</p>
+					<p>Elle remplace depuis le 1er Janvier 2006 l’allocation compensatrice tierce personne qui n’est plus versée qu’aux anciens bénéfi ciaires qui ont fait le choix de garder cette prestation. Le montant de cette prestation pour ceux qui la perçoivent encore, varie entre 441,23 et 772,16 euros. </p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse1=true"><em>Conditions </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p>Avoir un taux d’incapacité d’au moins 80 %.</p>
+					<p>Nécessiter l’aide d’une tierce personne pour les actes essentiels de la vie.</p>
+					<ul>
+						<li>Résider en France métropolitaine.</li>
+						<li>Être de nationalité française ou disposer d’un titre de séjour régulier.</li>
+						<li>Ne pas dépasser un plafond de ressources.</li>
+					</ul>
+					<p><b>Montant de l’aide:</b> il est fonction de la nature de l’aide, humain, matériel, animal sur la base d’un plafond de ressources. Il n’y a pas d’allocation forfaitaire. Cela va de l’emploi de personnel à domicile, de l’emploi d’aidant familial au sein de la famille de la personne à l’équipement de la maison en appareils adaptés au handicap de la personne. </p>
+					<p>A titre d’exemple, un aidant familial peut faire l’objet d’une prise en charge maximale de 941,09 euros par mois par le conseil général depuis le 01/01/2014.</p>
+					<p>Pour l’aménagement du logement: les travaux sont pris en charge à concurrence de 100% pour les premiers 500 euros et 50 % pour les dépassements avec un maximum d’attribution de 10 000 sur une période de 10 ans.</p>
+					<p>Concernant les aménagements de voiture, les frais sont remboursés à 100 % dans la limite de 1500 euros de dépenses. Au-delà de 1500 euros les remboursements sont pris en charge à 75 %.</p>
+					<p>Pour plus de détail, consulter le site <a href="service-public.fr">service-public.fr </a> <button  class="btn btn-default btn-fiche" data-dismiss="modal" ui-sref="handicap">Voir Handiap et prestations</button></p>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">MAJORATION TIERCE PERSONNE (MTP) </h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse" >
+					<p>La majoration tierce personne (MTP) peut être versée par la SS en complément d’une rente accident du travail, d’une pension d’invalidité ou d’une retraite au titre de l’inaptitude. Elle est perçue quand le patient a besoin de l’aide d’une ti erce personne pour les actes essentiels de la vie.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse2=true"><em>En cas d’accident du travail ou d’une maladie professionnelle </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p>L’incapacité partielle permanente doit approcher les 100 %.</p>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse3=true"><em>En cas d’invalidité</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<p>Il s’agit d’un patient bénéficiant déjà d’une invalidité de 2e catégorie: il lui est reconnu une incapacité d’au moins des deux tiers.<button data-dismiss="modal" class="btn btn-default btn-fiche"  ui-sref="assurance-invalidite">Voir Assurance invalidité</button></p>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse4=true"><em>Dans le cadre de la vieillesse</em></h6>
+				<div ng-show="reponse4">
+					<p class="attention"><i style="color: #1CA25F;" class="zmdi zmdi-alert-polygon"></i> <span style="color: #1CA25F; font-weight:bold;">ATTENTION:</span> : la loi impose que la saisie en espèces laisse au minimum à la personne l’équivalent du RSA, soit 509,30 euros/ mois au 31 décembre 2014.
+							</p>
+					<button  class="btn btn-default" ng-click="reponse4=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse5=true"><em>Procédure </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse5">
+					<p>La demande est à déposer auprès de la caisse (MSA, CPAM ou CRAV selon l’affiliation) qui verse ou versera l’avantage d’invalidité ou de vieillesse. <b>Un certificat médical est indispensable</b> à la constitution du dossier. L’accord ou le rejet se font par écrit.</p>
+					<button  class="btn btn-default" ng-click="reponse5=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse6=true"><em>Le montant et cumul</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse6">
+					<p>Il est unique et fixé à 1103,08 € par mois (01/04/2014) sans condition de ressources ni de justificatifs d’utilisation de cette prestation (notamment, pas d’obligation de rémunération d’un tiers).</p>
+					<button  class="btn btn-default" ng-click="reponse6=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse7=true"><em>Les avantages liés</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse7">
+					<p>Cette majoration peut ouvrir droit à l’exonération des charges patronales de SS pour l’emploi d’une aide à domicile. Elle n’est pas imposable sur le revenu,</p>
+					<p>Elle peut ouvrir droit à la gratuité pour l’accompagnateur sur les lignes SNCF.</p>
+					<button  class="btn btn-default" ng-click="reponse7=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  	<div class="col-sm-12 ">
+		  		<h3 class="quoi">ALLOCATION PERSONNALISÉE D’AUTONOMIE (APA) </h3>
+		 	</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<div class="wrapper-reponse" >
+					<p>L’APA est ouverte à tous sans condition de ressources</p>
+					<p>C’est une allocation s’adressant aux personnes dépendantes pour l’accomplissement des actes de la vie courante, qu’elles vivent à domicile ou en établissement.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse8=true"><em>Au domicile</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse8">
+					<p>L’APA permet le paiement des services nécessaires au maintien à domicile de la personne</p>
+					<ul>
+						<li>aide-ménagère, </li>
+						<li>portage ou confection des repas,</li>
+						<li>entretien du linge,</li>
+						<li>ravitaillement et achats,</li>
+						<li>adaptation du logement…</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse8=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse9=true"><em>En établissement </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse9">
+					<p>L’APA off re une aide pour être hébergé(e) en maison de retraite, en établissement de soins de longue durée ou être accueilli(e) dans une famille agréée.</p>
+					<p>En établissement, l’APA permet de financer le personnel et les charges annexes liées à la perte d’autonomie.</p>
+					<p>L’APA est destinée à aider le bénéficiaire à acquitter les frais de dépendance de l’établissement (tarif dépendance).</p>
+					<button  class="btn btn-default" ng-click="reponse9=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse10=true"><em>Les conditions </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse10">
+					<ul>
+						<li>Être âgé de 60 ans au moins pour le dépôt du dossier.</li>
+						<li>Justifier d’une perte d’autonomie correspondant à un GIR 1, 2, 3 ou 4.</li>
+						<li>Résidence stable et régulière en France (ou domiciliation par organisme). </li>
+						<li>Pour les étrangers: être en situation régulière en France</li>
+						<li>Domiciliation dans son domicile, celui de sa famille mais aussi résident, à titre onéreux, dans une famille d’accueil agréée par le président du Conseil général. </li>
+						<li>Les personnes sans résidence stable doivent élire domicile auprès d’un CCAS ou CIAS.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse10=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse11=true"><em>Constitution et instruction du dossier</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse11">
+					<p>Le dossier à retirer auprès des CCAS, CIAS, des Centres locaux d’information et de coordination (CLIC), des services d’aide à domicile agréés, des services du Département. </p>
+					<div class="row">
+						<div class="col-sm-12 titre-reponse">
+							<p class="attention"><i style="color: #1CA25F;" class="zmdi zmdi-alert-polygon"></i> <span style="color: #1CA25F; font-weight:bold;">ATTENTION:</span> : Bien remplir toutes les rubriques du dossier (patrimoine, etc.)<br> La demande doit être adressée par le demandeur au président du Conseil général.</p>
+						</div>
+					</div>
+					<p><b>Date d’enregistrement du dossier et instruction</b></p>
+					<p>Le Conseil général dispose de 10 jours après le dépôt du dossier pour accuser réception.</p>
+					<p>La date d’enregistrement est celle du dépôt du dossier complet.</p>
+					<p>La date de dépôt est le point de départ des 2 mois impartis au Conseil général pour instruire le dossier.</p>
+					<p>Le Conseil général doit donner sa décision d’attribution dans les 2 mois. À défaut, la loi exige que l’allocati on soit attribuée sur la base d’un montant forfaitaire jusqu’à la décision finale.</p>
+					<button  class="btn btn-default" ng-click="reponse11=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse12=true"><em>Deux phases d’instruction du dossier</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse12">
+					<span  class="glyphicon glyphicon-triangle-right triangle-FT"></span><b>Phase d’évaluation de la perte d’autonomie pour les demandeurs d’APA à domicile et en établissement:</b>
+					<ul>
+						<li>1 mois après la date d’enregistrement, un courrier avertit de l’évaluation du patient à domicile par l’équipe médico-sociale. Le médecin traitant peut assister à cette évaluation sur demande expresse du demandeur.</li>
+						<li>L’équipe élabore un «plan d’aide» pour que le patient puisse vivre à son domicile. Ce plan d’aide indique le niveau de dépendance, le montant de l’allocation et son affectation.</li>
+						<li>En établissement, c’est l’équipe médico-sociale de l’établissement qui évalue le patient.</li>
+					</ul>
+					<span  class="glyphicon glyphicon-triangle-right triangle-FT"></span><b>Phase administrative pour les demandeurs à domicile</b>
+					<ul>
+						<li><b>Si l’aide est acceptée,</b> alors le demandeur devra valider le plan d’aide. </li>
+						<li><b>Si l’aide est rejetée,</b> on oriente le demandeur vers la caisse de retraite ou le Conseil général afin d’étudier d’autres aides.</li>
+					</ul>
+					<div class="row">
+						<div class="col-sm-12 titre-reponse">
+							<p class="attention"><i style="color: #1CA25F;" class="zmdi zmdi-alert-polygon"></i> <span style="color: #1CA25F; font-weight:bold;">ATTENTION:</span> : à réception du plan d’aide, le demandeur a 10 jours pour faire connaître par écrit son accord, son refus ou ses observations. 8 jours plus tard, il reçoit une proposition définitive à laquelle il doit répondre dans les 10 jours. TOUT REFUS OU ABSENCE DE RÉPONSE est alors considéré comme abandon de la demande.</p>
+						</div>
+					</div>
+					<button  class="btn btn-default" ng-click="reponse12=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse13=true"><em>L’attribution</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse13">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span><b>Une notification de décision est envoyée au patient.</b> Le président du conseil général a un délai de 2 mois à partir du dépôt de dossier pour notifier l’attribution. Passé ce délai, l’APA est considérée comme accordée</li> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span><b>En cas de refus,</b> le courrier doit être motivé. </li> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span><b>Les droits sont ouverts dès la notification pour les demandeurs à domicile, </b> dès la date d’enregistrement du dossier pour les personnes en établissement.</li>
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span><b>Procédure d’urgence:</b> pour les personnes dans l’urgence médicale ou sociale pouvant compromettre leur maintien à domicile, le Conseil général peut att ribuer l’APA à titre provisoire dès la date d’enregistrement jusqu’à la fin du temps nécessaire à l’instruction du dossier, soit 2 mois.</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse13=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse14=true"><em>Étapes des recours </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse14">
+					<ul class="liste-reponse"> 
+						<li><b>1.</b>Recours gracieux auprès de la commission de l’AP</li>
+						<li><b>2.</b>Recours contentieux auprès de la commission départementale d’aide sociale</li>
+						<li><b>3.</b>Recours auprès de la commission centrale d’aide sociale</li>
+						<li><b>4.</b>le Conseil d’État</li>
+					</ul>
+					<p>Cette allocation n’est pas cumulable avec certaines autres prestations, se renseigner auprès de l’assistante sociale du CCAS. Contacter votre mairie.</p>
+					<button  class="btn btn-default" ng-click="reponse14=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse15=true"><em>Montant mensuel  </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse15">
+					<p>Le montant maximum mensuel de l’APA dépend du taux de dépendance</p>
+					<ul>
+						<li>GIR 1: 1312,67 euros</li>
+						<li>GIR 2: 1125,14 euros</li>
+						<li>GIR 3: 843,86 euros</li>
+						<li>GIR 4: 562,57 euros </li>
+					</ul>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span>Le montant minimum est de 28,59 euros. En deçà de ce montant, il n’est pas versé </li> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span>En cas d’urgence, le président du conseil général peut décider d’att ribuer un montant forfaitaire égal à 630,80 euros si la personne réside à son domicile ou égal à 50% du tarif correspondant à la dépendance des résidents en établissement, classés en GIR 1 ou 2. Cette avance est soustraite du montant de l‘APA versée ultérieurement.</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse15=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse16=true"><em>Modalités de versement</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse16">
+					<p>L’allocation est versée au bénéfi ciaire s’il recrute lui même la personne aidante à domicile, y compris un membre de la famille à l’exception du conjoint, concubin ou pacsé</p>
+					<p>Elle est versée à la personne aidante si elle dépend d’une association agréée</p>
+					<p>En établissement l’APA est versée directement à l’établissement.</p>
+					<p>Un montant minimum doit cependant être laissé à la disposition de la personne bénéficiaire de l’aide sociale départementale soit 96 euros par mois pour la personne hébergée.</p>
+					<button  class="btn btn-default" ng-click="reponse16=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse-FT" ng-click="reponse17=true"><em>Révision, Suspension </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse17">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span><b>Si le bénéficiaire de l’APA à domicile est hospitalisé pour des soins de courte durée,</b> l’allocation est maintenue les 30 premiers jours. Elle est ensuite suspendue jusqu’à la sortie de l’établissement et est ensuite reversée dans son intégralité quelque soit la date de retour de l’allocataire</li> 
+						<li><span  class="glyphicon glyphicon-triangle-right triangle-FT"></span><b>L’APA peut également être suspendue</b> en cas de non respect par le bénéficiaire de ses obligations</li> 
+					</ul>
+					<p>Le montant de l’APA est révisé régulièrement ou à tout moment en cas de changement de situation du bénéficiaire.</p>
+					<button  class="btn btn-default" ng-click="reponse17=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+
+
+
+

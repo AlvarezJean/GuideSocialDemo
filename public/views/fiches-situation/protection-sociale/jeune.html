@@ -1,0 +1,95 @@
+
+		<div class="row">
+		  <div class="col-sm-12 titre">Docteur, je suis jeune et je n’ai plus de couverture sociale</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 citation">
+			  	<p><em><blockquote>"Quand les jeunes quittent le domicile familial pour diverses raisons, ils n’ont pas le réflexe de prendre contact avec la SS. Parfois ils sont démunis face à l’administration."</blockquote></em>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">LE PATIENT EST PEUT-ÊTRE ASSURÉ SOCIAL</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse1=true"><em>Au titre d'ayant droit</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p>Les prestations d’un ayant droit sont limitées au remboursement de soins et de médicaments. Il ne percevra pas d’avantages en espèces (indemnités journalières, invalidité,…)<br> S’il a entre 16 et 20 ans et poursuit des études: prestations en nature sur le compte de l’assuré et prolongation des droits de 12 mois après ses 20 ans. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('couverture-sociale');">Voir Couverture Sociale</button></p>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> S’il a moins de 20 ans et ne peut pas travailler suite à un handicap ou une maladie chronique.</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> S’il est conjoint ou concubin d’un assuré, ne poursuit pas d’études et ne fait pas de demande personnelle.</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> S’il est à la charge effective, totale et permanente depuis au moins 12 mois d’un assuré social qui ne soit ni son parent, ni son conjoint, ni son concubin.</li>
+					</ul>
+					<div class="col-sm-12 wrapper-savoir">
+						<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+						<p>pour déclarer ses ayants droit. <button ui-sref="pieces-a-joindre" class="btn btn-default btn-PAJ">Pièces à joindre</button></p>
+					</div>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse2=true"><em>Etudiant</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p>S’il a entre 20 ans et 28 ans et est affilié au régime étudiant: <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('etudiants-ft');">Voir Etudiants</button></p>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’il a un contrat de travail d’au moins 60 heures par mois pour l’année scolaire en cours (1er octobre au 30 septembre), il est affilié au régime général de SS. Il n’a pas à payer la SS étudiante. Il doit se présenter, le jour de son inscription, avec son contrat de travail.</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’il perd son emploi au cours de l’année universitaire, l’étudiant doit expliquer sa nouvelle situation auprès de la caisse de SS (CPAM) et s’assurer qu’il est bien couvert jusqu’à la fin de l’année universitaire (demander une attestation actualisée). Sinon, il doit s’acquitter de la SS étudiante. </li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Si le patient reprend des études et qu’il a travaillé suffisamment pour ouvrir des droits, il doit demander à sa caisse de SS si ses droits au régime général couvrent la totalité de l’année universitaire (demander une attestation actualisée). Sinon, il doit s’acquitter de la SS étudiante.</li>
+					</ul>
+					<div class="col-sm-12 wrapper-savoir">
+						<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+						<p>l’étudiant au régime général de SS a peutêtre ouvert des droits aux IJ, à l’invalidité… il touchera donc des indemnités basées sur ses derniers salaires en cas de maladie. Vérifier les droits à la SS. </p>
+					</div>
+					<div class="col-sm-12 wrapper-savoir">
+						<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+						<p>Tous les étudiants qui ne sont plus déclarés sur la fiche d’imposition de leurs parents peuvent bénéficier de la CMUC ou de l’aide à l’acquisition d’une mutuelle (ACS) si les conditions de ressources sont respectées. S’ils avaient pris une mutuelle étudiante, ils peuvent se faire rembourser en apportant le justificatif d’attribution. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CMU');">Voir CMU</button></p>
+					</div>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse3=true"><em>Autres situations</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<p>Le jeune doit se rendre à la CPAM de son domicile pour se faire affilier à la SS:</p>
+					<ul > 
+						<li>s’il est stagiaire en formation professionnelle rémunérée par l’État,</li>
+						<li>s’il est en formati on alternée,</li>
+						<li>s’il est en contrat d’apprentissage (même régime que les salariés),<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('couverture-sociale');">Voir Couverture Sociale</button> </li>
+						<li>s’il est en contrat de qualification, emploi solidarité ou d’orientation (prolongation de 12 mois après la fin du contrat),</li>
+						<li>s’il est au chômage <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CS-chomeur');">Voir Couverture sociale des chômeurs</button> </li>
+						<li>s’il est atteint d’un handicap et a plus de 20 ans.</li>
+					</ul>
+					<button class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">S’IL N’A AUCUNE COUVERTURE</h3>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<p>Dans le cas où le jeune ne se trouve dans aucune des situations précédemment citées, il peut faire une demande de CMU de base. Il doit se rendre à la CPAM de résidence avec les pièces nécessaires.<br> Voir p.118 Il peut, par ailleurs, sous condition de ressources des 12 mois précédents, demander la CMUC ou se voir att ribuer une aide pour une complémentaire. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CMU');">Voir CMU</button></p>
+		  </div>
+		</div>
+		
+<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

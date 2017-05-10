@@ -1,0 +1,94 @@
+		<div class="row">
+		  <div class="col-sm-12 titre">Docteur, on veut me retirer mes enfants</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 citation">
+		  	<p><em><blockquote>"Cette situation est difficile à gérer par la famille, qui peut quand même faire valoir ses droits. Il vous faut faire une évaluation de la situation en contactant les services sociaux concernés. Vous devez vous faire une opinion et accompagner la famille. Vous jouez ici un rôle de médiateur dont l’avis sera précieux pour le juge."</blockquote></em>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">DE QUOI S’AGIT-IL?</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Cas de divorce où les parents ne sont pas d’accord sur la garde des enfants</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p><button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('protection-mineurs');">Voir Protection des mineurs</button></p>
+					<p><b>1. Tenter une médiation familiale.</b> <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('mediation-familiale');">Voir Médiation familiale</button><br>En cas de désaccord, les parents peuvent saisir le juge des affaires familiales.</p>
+					<p><b>2. le juge des affaires familiales tranche la question.</b><br> Le patient peut être accompagné d’un avocat mais il peut aussi se présenter seul.<br> S’il est en difficulté financière et souhaite un avocat, il peut solliciter l’aide juridictionnelle. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('aide-juridictionnelle');">Voir Aide juridictionnelle</button></p>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Le juge prend une décision.<br>
+							<ul>
+								<li>Le patient peut faire appel.</li>
+							</ul>
+						</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Ou il ordonne une enquête sociale par un travailleur social, à partir de laquelle il prend une décision.
+							<ul>
+								<li>Le patient peut aussi faire appel.</li>
+							</ul>
+						</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>Un signalement</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p><b>De la part de:</b></p>
+					<ul>
+						<li> l'école</li>
+						<li> un service social (secteur, mairie…)</li>
+						<li> l’hôpital</li>
+						<li> un médecin </li>
+						<li> le voisinage</li>
+					</ul>
+					<p><b>A qui?</b></p>
+					<ul>
+						<li> A l’inspecteur de l’ASE</li>
+						<li> Au médecin responsable du service de PMI</li>
+						<li> Au procureur de la République dans les cas d’extrême gravité ou d’urgence</li>
+						<li> Aux responsables de circonscription d’actions sanitaires et sociales</li>
+						<li> Au service social et médical scolaire </li>
+						<li> Aux enseignants</li>
+						<li> Au service social de votre Mairie (CCAS)</li>
+						<li> Au 119 :<br>Dans ce cas, une enquête sociale est effectuée par une équipe pluridisciplinaire.</li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse3=true"><em>L'enquête</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<p>Les suites de l’enquête peuvent déboucher sur diverses mesures: </p>
+					<ul>
+						<li> soit l’affaire est classée sans suite,</li>
+						<li> soit une proposition d’un accompagnement social et/ou PMI,</li>
+						<li> <b>soit une intervention de l’ASE:</b> aide matérielle et/ou éducative (AEMO (Judiciaire seulement) AED, AERD…), proposition de placement, </li>
+						<li> s’il y a réel danger ou que la famille n’adhère pas à l’intervention du service, l’inspecteur signale la situation de l’enfant au procureur de la République. </li>
+					</ul>
+					<p><b>Dans ce cas: </b> le procureur de la République peut décider de saisir le juge des enfants de la situation.</p>
+					<p>Si les faits constituent une infraction à la loi, il appréciera les poursuites pénales.<br>Le juge des enfants reçoit les parents et l’enfant, et décidera éventuellement des mesures d’assistance éducative.<br> En cas d’urgence, le juge des enfants pourra prendre toutes dispositions destinées à assurer la protection immédiate de l’enfant (mesures confiant l’enfant à la garde d’un établissement, d’un service ou d’un tiers).</p>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

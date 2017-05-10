@@ -1,0 +1,115 @@
+
+		<div class="row">
+		  	<div class="col-sm-12 titre">Docteur, je suis étranger et je n’ai pas de couverture sociale</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 citation">
+			  	<p><em><blockquote>"Les étrangers récemment arrivés sur le sol français connaissent peu le fonctionnement de l’administration française. Ils hésitent à se faire soigner. Pour entreprendre des démarches, ils ont besoin d’être accompagnés."</blockquote></em>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">LE PATIENT EST EN SITUATION IRRÉGULIÈRE</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse1=true"><em>Il est sur le territoire depuis moins de 3 mois</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<p>En principe, il ne peut bénéficier d’aucune couverture sociale sauf s’il s’agit de soins urgents. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('protection-etrangers');">Voir Protection sociale des étrangers</button></p>
+					<p><b>Dans ce cas:</b></p>
+					<ul> 
+						<li>envoyer votre patient aux urgences de l’hôpital accompagné d’une lettre de type p.</li>
+						<li>ou l’envoyer à la PASS de l’hôpital. Liste des PASS sur <a target="_blank" href="http://www.sante.gouv.fr">le site santé du gouvernement</a> et <button ui-sref="carnet-adresses" class="btn btn-default btn-CA">Carnet d'adresses</button></li>
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse2=true"><em>Il est sur le territoire depuis plus de 3 mois</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p>(C’est-à-dire qu’il peut apporter la preuve de 3 mois de présence)</p>
+					<p>Vous pouvez conseiller à votre patient deux actions simultanées.<br> D’une part, le patient peut constituer un dossier d’AME qui prendra effet à la date de dépôt du dossier. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('protection-etrangers');">Voir Protection sociale des étrangers</button></p>
+					<p> D’autre part, si la situation médicale le justifie et si cette pathologie ne peut être soignée dans son pays d’origine, déposer une demande de régularisation pour raisons médicales à l’ARS Agence Régionale de Santé et/ou préfecture. <button ui-sref="115" class="btn btn-default btn-LT">Lettre type</button>et <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('protection-etrangers');">Voir Protection sociale des étrangers</button></p>
+					<p>Vous pouvez également diriger le patient vers une association spécialisée dans le droit des étrangers ou diriger le patient vers une AS de l’hôpital.<br> Si le patient reçoit un récépissé de sa demande de régularisation, il peut alors faire une demande de CMU à la CPAM de résidence.<button ui-sref="pieces-a-joindre" class="btn btn-default btn-PAJ">Pièces à joindre</button></p>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">LE PATIENT EST EN SITUATION RÉGULIÈRE</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<p>Les titulaires des cartes de séjour suivantes peuvent bénéficier d’une couverture sociale:</p>
+					<ul> 
+						<li>Carte de résident de 10 ans</li>
+						<li>Carte de séjour temporaire</li>
+						<li>Autorisation provisioire de séjour</li>
+						<li>Récépissé de damnde de carte de séjour</li>
+					</ul>
+				<h6 class="titre-reponse" ng-click="reponse3=true"><em>Droit au régime général</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<p>Si votre patient a obtenu le droit de travailler et s’il a travaillé suffisamment pour ouvrir des droits: il doit se rendre à sa caisse de SS avec ses 3 dernières fiches de salaire. Il bénéficiera de prestations. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('couverture-sociale');">Voir Couverture sociale</button></p>
+					<p class="attention"><i style="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span>Un patient dont le titre de séjour est périmé a peut-être ouvert des droits au régime général et bénéficie peut-être du maintien des droits. Dans ce cas, il peut faire une demande d’AME complémentaire à la CPAM de résidence.<br> Vérifier avec lui si la demande de renouvellement a été effectuée. S’il n’y a eu aucune démarche, faîtes le accompagner par un professionnel du social et/ ou une association spécialisée. Carnet d’adresses p.123</p>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse4=true"><em>CMU</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse4">
+					<p>Il peut bénéficier de la CMU de base s’il n’est couvert à aucun autre titre et remplit les conditions d’accès.<br>Il peut aussi bénéficier de la CMUC sous condition de ressources. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CMU');">Voir CMU</button></p>
+					<button  class="btn btn-default" ng-click="reponse4=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse5=true"><em>En tant qu’allocataire du RSA ou de l’ATA</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse5">
+					<ul class="liste-reponse "> 
+						<li><span  class="glyphicon glyphicon-triangle-right"></span> La perception du RSA ouvre des droits à la CMU et à la CMUC.
+						</li> 
+						<li>Son arrêt de travail dépasse 6 mois, les conditions administratives changent.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('arret-maladie');">Voir Arrêt de maladie</button></li>
+						<li><span  class="glyphicon glyphicon-triangle-right"></span>
+							La perception de l’ATA donne droit au remboursement des soins. Le patient doit contacter le Pôle-Emploi pour évaluer ses droits.  
+						</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse5=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">LE PATIENT EST DEMANDEUR D’ASILE</h3>
+		  	<p>Parfois, ces personnes ont subi, dans leur pays d’origine, des tortures physiques et psychologiques. Si vous le constatez, il est nécessaire d’orienter votre patient:</p>
+		  	<ul class="liste-reponse "> 
+						<li><span  class="glyphicon glyphicon-triangle-right"></span>il existe des consultations spécifiques. Contacter le Comede, association Primo Lévi, Médecins du Monde… Carnet d’adresses p.123
+						</li> 
+						<li>Son arrêt de travail dépasse 6 mois, les conditions administratives changent.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('arret-maladie');">Voir Arrêt de maladie</button></li>
+						<li><span  class="glyphicon glyphicon-triangle-right"></span>
+						Vous pouvez rédiger un certificat médical pour appuyer sa demande d’asile. 
+						</li> 
+					</ul>
+		  </div>
+		</div>
+
+		<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		    <div class="modal-dialog modal-lg" role="document">
+			      <div class="modal-content wrapper-FT">
+			        <div class="modal-body">
+			          <ng-include src="fiche"></ng-include>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+			        </div>
+			    </div>
+		    </div>
+		</div>

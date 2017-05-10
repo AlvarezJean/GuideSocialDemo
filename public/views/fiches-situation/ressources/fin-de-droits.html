@@ -1,0 +1,75 @@
+		<div class="row">
+		  <div class="col-sm-12 titre">Docteur, je suis au chômage en fin de droits</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 citation">
+			  	<p><em><blockquote>"Le patient entrant dans une période de fin de droits aux allocations chômage risque de se diriger vers une situation de désocialisation et d’exclusion. S’assurer que toutes les démarches ont été envisagées en faisant votre diagnostic social."</blockquote></em>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">UNE DES PRINCIPALES CONSÉQUENCES SERA LA RUPTURE DE REVENUS </h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Lui conseiller de maintenir une couverture sociale</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<ul class="liste-reponse"> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span>Quelle que soit sa situation, il aura toujours un accès aux soins. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('couverture-sociale');">Voir Couverture sociale</button> </li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span>En cas de maladie, il a droit à des prestations en nature et en espèces (IJ, invalidité…).</li> 
+					</ul>
+					<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+					<p>même s’il est au chômage, il peut prétendre à une prise en charge en longue maladie ou à l’assurance invalidité. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('assurance-invalidite');">Voir Assurance invalidité</button> <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('longue-maladie');">Voir Longue maladie</button> </p>
+					<p>Pour l’invalidité, il est indispensable qu’il fasse la demande au moins trois mois avant la fi n de sa troisième année d’indemnité de longue maladie.</p>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse2=true"><em>Il doit maintenir son inscription au PÔLE EMPLOI </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2">
+					<p class="sous-titre">Cela lui permet de maintenir ses droits à la protection sociale</p>
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Vous devez l’orienter vers son agence pour trouver des propositions adaptées à sa situation (formation...) avec un courrier de votre part. <button ui-sref="115" class="btn btn-default btn-LT">Lettre type</button></li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse2=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse3=true"><em>Il doit faire les démarches utiles d’aides financières et d’ouverture des droits suivants </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3">
+					<ul>
+						<li> Aides au logement <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('aide-logement');">Voir Aide au logement</button></li>
+						<li> Prestations CAF car toute modification de situation peut lui ouvrir de nouveaux droits </li>
+						<li> Ex: demande de  RSA <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('RSA');">Voir RSA</button></li>
+						<li> Comment prévenir l’expulsion <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('expulsion-prevention-procedure');">Voir Prévenir l'expulsion</button></li>
+						<li> L’aider à comprendre les procédures d’huissiers <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('huissiers');">Voir Huissiers</button></li>
+						<li> Si le patient est très endetté <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('surendettement');">Voir Surendettement des familles</button></li>
+					</ul>
+					<ul class="liste-reponse">
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’il a des crédits, il doit vérifier s’il a pris une assurance chômage, invalidité et/ou longue maladie. Dans ce cas, celle-ci prend le relais pour les remboursements. </li>
+					</ul>
+					<p>IJ: Indemnités Journalières,<br>CAF: Caisse d’Allocations Familiales<br> RSA: Revenu de Solidarité Active</p>
+					<button  class="btn btn-default" ng-click="reponse3=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

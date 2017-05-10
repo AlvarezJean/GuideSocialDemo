@@ -1,0 +1,142 @@
+
+		<div class="row">
+		  <div class="col-sm-12 titre">Docteur, je reçu la facture de l'hôpital<i class="zmdi zmdi-compass icon-savoir" data-toggle="modal" style="margin-left: 35%;" data-target=".savoir-modal-lg4"  style="color: white;cursor: pointer;"></i></div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 citation">
+		  	<p><em><blockquote>"Le patient est démuni face à une situation qui lui semble catastrophique. L’objectif est de mieux cerner le problème et de permettre au patient de se recentrer et de trouver des solutions."</blockquote></em>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">QUE LUI RECLAME-T-ON SUR CETTE FACTURE?</h3>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+			<h6 class="titre-reponse" ng-click="reponse1=true"><em>La totalité des frais</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Si le patient est assuré social, l’orienter vers le service des frais de séjour avec sa carte Vitale. </li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 ">
+			<h6 class="titre-reponse" ng-click="reponse2=true"><em>S'il n'est pas assuré social </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse2 ">
+					<ul class="liste-reponse "> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> Consulter <a ui-sref="secu" class="btn-fiche-s">Docteur, je n’ai plus de Sécurité sociale</a></li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse2=false">FERMER</button>
+				</div>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 ">
+			<h6 class="titre-reponse" ng-click="reponse3=true"><em>Le ticket modérateur</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse3 ">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>Selon la situation du pati ent, il peut être pris en charge <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('ticket-moderateur');">Voir Cas d'exonération du ticket modérateur</button></li> 
+					</ul>
+					<p><b>Si le patient a une mutuelle, ce ticket est pris en charge:</b> contacter la mutuelle pour connaître les possibilités de dispense d’avance des frais.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('complementaires-sante');">Voir Complémentaires de santé</button></p>
+					<button  class="btn btn-default" ng-click="reponse3=false">FERMER</button>
+				</div>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 ">
+			<h6 class="titre-reponse" ng-click="reponse4=true"><em>Le forfait hospitalier (18 €/jour en déc. 2014)</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse4 ">
+					<p>Le forfait hospitalier est la participation aux frais de l’assuré. Il est facturé dans le cas d’une hospitalisation supérieure à 24 heures. Il peut être pris en charge par une mutuelle au l’assurance santé.</p>
+					<div class="col-sm-12 wrapper-savoir">
+						<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+						<ul>
+							<li><b><em>Certaines personnes sont exemptes de ce forfait:</em></b></li>
+							<li>Femmes enceintes et nouveau-nés</li>
+							<li>Hospitalisation pour un accident du travail ou une maladie professionnelle</li>
+							<li>Personnes handicapées de moins de 20 ans hébergées dans des établissements d’éducation </li>
+							<li>Titulaires de pension militaire</li>
+							<li>Bénéficiaires de la CMUC ou de l’AME</li>
+							<li>Bénéficiaires du régime d’Alsace-Lorrain</li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 ">
+							<p class="attention"><i style="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span> Il n’est pas pris en charge par certaines compagnies d’assurances dans le cas de séjour en centre de Postcure pour dépendants à l’alcool ou aux stupéfiants.
+							</p>
+						</div>
+					</div>
+					<button  class="btn btn-default" ng-click="reponse4=false">FERMER</button>
+				</div>
+			 </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 ">
+				<h6 class="titre-reponse" ng-click="reponse5=true"><em>Ne sait pas </em></h6>
+				<div class="wrapper-reponse"  ng-show="reponse5 ">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right"></span>Envoyer le patient avec sa facture à l’hôpital ou le diriger vers une AS</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse5=false">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">LORS DE SON HOSPITALISATION, LE PATIENT ETAIT-IL BENEFICIAIRE DE L'AME OU DE LA CMU?</h3>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<p style="padding: 0 3rem;"><b>Si oui:</b> il doit apporter sa notification d’ouverture de droits et sa facture auprès du service de l’hôpital. </p>
+		  	<p style="padding: 0 3rem;"><b>Si non:</b> dans certains cas, l’AME et la CMU de base, et la CMUC sont rétroactives. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('protection-etrangers');">Voir Protection sociale des étrangers</button> et<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CMU');">Voir CMU</button></p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">DEPUIS QUAND A-T-IL QUITTÉ L’HÔPITAL?</h3>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+			  <p style="padding: 0 3rem;"><b>Moins de 1 mois:</b> le patient peut encore faire une demande d’AME ou de CMU et CMUC s’il est entré à l’hôpital par les Urgences. </p>
+			  <p style="padding: 0 3rem;"><b>Plus de 1 mois:</b> contacter l’AS de la CPAM et/ou le service social de l’hôpital pour envisager d’autres aides.</p>
+			  <p style="padding: 0 3rem;"><b>Cas extrêmes:</b> le patient a reçu plusieurs rappels et n’a pas répondu. Le délai de paiement est dépassé et le Trésor public ou l’hôpital démarrent une action de recouvrement.<button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('huissiers');">Voir Huissiers</button></p>
+		  </div>
+		</div>
+		<div class="col-sm-12 wrapper-savoir">
+			<h4 class="savoir" ><span class="glyphicon glyphicon-arrow-right savoir-arrow" ></span> A savoir</h4>
+			<p>Certains frais ne sont pas pris en charge, comme les suppléments pour confort personnel (télévision, téléphone,…) et les dépassements d’honoraires. Le patient doit demander un devis à l’hôpital.</p>
+		</div>
+
+
+<div class="modal  fade savoir-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg4" role="document">
+	    <div class="modal-content wrapper-fiche ">
+		    <div class="modal-body">
+				<h3 class="titre-conduite" ><span style="color: orangered;font-size: 30px;" class="glyphicon glyphicon-triangle-right"></span>Conduite à tenir</h3>
+				<p> Envoyer le patient au service social du service dans lequel il a été hospitalisé (il existe très souvent un service social par service) Ne pas hésiter à rédiger un courrier. <button data-dismiss="modal" ui-sref="104" data-dismiss="modal" class="btn btn-default btn-LT">Lettre type</button></p>
+			</div>	
+	    <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	    </div>
+	    </div>
+	</div>
+</div>
+	
+<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>

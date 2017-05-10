@@ -1,0 +1,116 @@
+
+		<div class="row">
+		  <div class="col-sm-12 titre">Docteur, je ne peux pas vous payer</div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 citation">
+		  	<p><em><blockquote>"Ne pas pouvoir payer une consultation constitue le premier symptôme d’une situation sociale délicate. Vous pouvez bien sûr, exceptionnellement, procéder à un acte gratuit en cas d’urgence mais il est bien préférable d’orienter votre patient en vue d’une réouverture de droits." </blockquote></em>
+			</p>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">DE QUOI S'AGIT-IL?</h3>
+		  </div>
+		</div>
+		<div class="row"> 
+		  <div class="col-sm-12 ">
+		  	<p class="titre-question"><em>3 cas peuvent se présenter:</em></p>
+		  </div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse1=true"><em>Le patient n’a pas de droits ouverts</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse1">
+					<ul class="liste-reponse"> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span>Consultez la fiche de situation <br>
+						 <button  class="btn btn-default btn-fiche-s" ui-sref="secu">Docteur, je n'ai plus de sécurité sociale</button> et <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('couverture-sociale');">Voir Couverture sociale</button></li> 
+						  <li><span  class="glyphicon glyphicon-triangle-right "></span> Il peut faire une demande de CMU de base CMU ou une demande d’AME s’il est étranger en France depuis plus de 3 mois. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CMU');">Voir CMU</button></li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse1=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 ">
+			<h6 class="titre-reponse" ng-click="reponse2=true"><em>Le patient n’a pas de couverture complémentaire </em></h6>
+				<div class="wrapper-reponse"  ng-show="reponse2 ">
+					<p>Le patient peut bénéficier, sous condition de ressources, de la CMUC ou de l’aide à l’acquisition d’une mutuelle. <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('CMU');">Voir CMU</button>et <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('complementaires-sante');">Voir Complémentaires de santé</button></p>
+					<button  class="btn btn-default" ng-click="reponse2=false">FERMER</button>
+				</div>
+			 </div>
+		</div>  
+		<div class="row">
+			<div class="col-sm-12">
+			<h6 class="titre-reponse" ng-click="reponse3=true"><em>Le patient a une couverture complémentaire </em></h6>
+				<div class="wrapper-reponse"  ng-show="reponse3 ">
+				<p>Si le patient a une mutuelle, vous pouvez signer avec elle une convention de tiers payant.</p>
+					<button  class="btn btn-default" ng-click="reponse3=false">FERMER</button>
+				</div>
+			 </div>
+		</div>
+			<div class="row">
+		  <div class="col-sm-12 ">
+		  	<h3 class="quoi">LE PATIENT NE PEUT PAS FAIRE L'AVANCE DES FRAIS</h3>
+		  </div>
+		</div>
+		<div class="row"> 
+			<div class="col-sm-12 ">
+			  	<p class="titre-question"><em><b>Il n'a plus de remboursement de Sécurité sociale</b></em></p>
+			  	<p>Le patient est confronté à un problème de remboursement des frais médicaux par la SS? </p>
+			  	<p><em>Si c'est le cas,<button  class="btn btn-default btn-fiche-s" ui-sref="secu">Docteur, je n'ai plus de sécurité sociale</button> </em></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 titre-reponse">
+				<h6 class="titre-reponse" ng-click="reponse4=true"><em>Il est surendetté</em></h6>
+				<div class="wrapper-reponse" ng-show="reponse4">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span><button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('surendettement');">Voir surendettement des familles et faillites familiales</button> </li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse4=false;">FERMER</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 ">
+			<h6 class="titre-reponse" ng-click="reponse5=true"><em>Il s’agit de rupture de prestations ou de revenus </em></h6>
+				<div class="wrapper-reponse" ng-show="reponse5">
+					<ul class="liste-reponse"> 
+						<li><span  class="glyphicon glyphicon-triangle-right "></span> Contacter une AS de secteur pour évaluer la situation du patient et connaître ses droits aux prestations sociales.</li>
+						<li><span  class="glyphicon glyphicon-triangle-right "></span>S’il a plus de 25 ans (ou moins de 25 ans s’il a travaillé 2 ans sur une période de 3 années) et est en situation régulière de séjour ou est français, sachez qu’il a des droits potentiels au RSA, pourvu qu’il en fasse la demande. De même pour son droit à une CMU. Souvent seule l’absence d’une domiciliation et d’une carte d’identité constitue un empêchement à l’étude ou au renouvellement de ces droits.</li> 
+					</ul>
+					<button  class="btn btn-default" ng-click="reponse5=false;">FERMER</button>
+				</div>
+			 </div>
+		</div>  
+		<br>
+		<div class="row"> 
+			<div class="col-sm-12 ">
+			  	<p><b>Le patient attend l’AME ou se l’est vu refuser? </b></p>
+			  	<p><em>Si c’est le cas, <button  class="btn btn-default btn-fiche-s" ui-sref="ame">Docteur, je n'ai plus droit à l'AME</button> et <button  class="btn btn-default btn-fiche"  data-toggle="modal" data-target=".FT-modal-lg" ng-click="template('protection-etrangers');">Voir Protection sociale des étrangers</button> </em></p>
+			</div>
+		</div>
+		<div class="row"> 
+			<div class="col-sm-12 ">
+			  	<p><b>Contacter une AS de la caisse de SS</b></p>
+			  	<p class="attention"><i style ="color: red;" class="zmdi zmdi-alert-polygon"></i> <span style="color: red; font-weight:bold;">ATTENTION:</span> En cas d’urgence de soins, contacter  <a target="_blank" href="http://www.sante.gouv.fr/htm/pointsur/praps/index.html">la PASS de l’hôpital public</a> et Carnet d’adresses p.133 </p>
+			</div>
+		</div>
+		
+
+
+
+<div class="modal  fade FT-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+	      <div class="modal-content wrapper-FT">
+	        <div class="modal-body">
+	          <ng-include src="fiche"></ng-include>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+	        </div>
+	    </div>
+    </div>
+</div>
+
