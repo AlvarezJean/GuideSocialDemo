@@ -11,7 +11,7 @@ mongoose.Promise = global.Promise;
 var path = require('path'); 
 var less = require('less');
 
-var port = process.env.PORT || 8080
+var port = process.env.PORT || 8000
 
  // use body parser so we can grab information from POST requests
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -46,7 +46,7 @@ app.get('/', function(req, res) {
 });
 
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+server.listen(port, function() {
+    console.log("App is running on port " + port);
 });
 console.log("Server running on port 8080");
