@@ -6,7 +6,7 @@ var app        = express();         // define our app using express
 // var bcrypt = require('bcryptjs');
 // var morgan     = require('morgan');     // used to see requests
 // var mongoose   = require('mongoose');
-mongoose.Promise = global.Promise;
+// mongoose.Promise = global.Promise;
 // var config = require('./config');
 var path = require('path'); 
 var less = require('less');
@@ -26,7 +26,7 @@ var port = process.env.PORT || 8080
 });
 
 
-app.use(morgan('dev')); 
+// app.use(morgan('dev')); 
 // mongoose.connect(config.database);
 app.use(express.static(__dirname + '/public'));
 
