@@ -2,20 +2,20 @@
 
 var express    = require('express');    // call express
 var app        = express();         // define our app using express
-var bodyParser = require('body-parser');  // get body-parser
+// var bodyParser = require('body-parser');  // get body-parser
 // var bcrypt = require('bcryptjs');
-var morgan     = require('morgan');     // used to see requests
-var mongoose   = require('mongoose');
+// var morgan     = require('morgan');     // used to see requests
+// var mongoose   = require('mongoose');
 mongoose.Promise = global.Promise;
 // var config = require('./config');
 var path = require('path'); 
 var less = require('less');
 
-var port = process.env.PORT || 8000
+var port = process.env.PORT || 8080
 
  // use body parser so we can grab information from POST requests
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json())
 
  // configure our app to handle CORS requests
  app.use(function(req, res, next) {
@@ -46,7 +46,5 @@ app.get('/', function(req, res) {
 });
 
 
-server.listen(port, function() {
-    console.log("App is running on port " + port);
-});
+app.listen(8080);
 console.log("Server running on port 8080");
